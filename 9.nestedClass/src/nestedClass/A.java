@@ -5,6 +5,7 @@ public class A {
 		System.out.println("A construction");
 	}
 
+	//Instance Member Class
 	class B {
 		B() {
 			System.out.println("B construction");
@@ -18,6 +19,7 @@ public class A {
 		// static void method1() {}
 	}
 
+	//Static Member Class
 	static class C {
 		C() {
 			System.out.println("C construction");
@@ -34,6 +36,7 @@ public class A {
 	}
 
 	void method() {
+		//Local Class
 		class D {
 			D() {
 				System.out.println("D construction");
