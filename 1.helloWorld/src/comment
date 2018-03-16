@@ -1,0 +1,33 @@
+
+Ctrl + F11 : 바로 전에 실행했던 클래스 실행
+Ctrl + F : 기본적으로 찾기
+Ctrl + D : 한줄 삭제
+Ctrl + Space 자동완성
+Ctrl + Shift + F 줄정렬
+Ctrl + Shift + L 단축키 표시
+
+Ctrl + L 번호를 입력 시 해당 줄로 커서가 이동
+Alt +  ← 이전에 했던 Action
+Alt +  → 이전에 했던 Action
+Alt + ↓  Alt + ↑  커서가 위치한 줄의 내용이 위치할 순서를 바꿀 때 사용합니다.
+Ctrl + Alt + ↓/↑  커서가 위치한 줄의 내용 복사 시 사용합니다
+
+
+Ctrl + Shift + O 자동으로 import할 때 사용합니다.
+Ctrl + M 소스코드의 창을 전체화면으로 변경합니다.(좌측의 익스플로러 창이 숨는 기능)
+
+Ctrl + Shift +X  대문자로 변환
+Ctrl + Shift + Y  소문자로 변환
+
+//주석
+Ctrl + Shift + / : 블록 주석(/* */)
+Ctrl + Shift + \ : 블록 주석 제거
+Ctrl + / : 여러줄이 한꺼번에 주석처리됨. 주석 해제하려면 반대로 하면 된다.
+
+
+//Debug
+F11   Debug 시작
+F8    Debug 계속 진행
+F6   Debug 라인 실행
+F5   Debug 라인 단위로 실행(함수 내부로 들어갑니다.)
+Ctrl + Shift + B  현재 커서 라인에 브레이크 포인트(Break point) 설정
