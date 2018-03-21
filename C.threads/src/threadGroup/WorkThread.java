@@ -1,10 +1,10 @@
-package sec08.exam01_threadgroup;
+package threadGroup;
 
 public class WorkThread extends Thread {
 	public WorkThread(ThreadGroup threadGroup, String threadName) {
 		super(threadGroup, threadName);
 	}
-	
+
 	@Override
 	public void run() {
 		while(true) {

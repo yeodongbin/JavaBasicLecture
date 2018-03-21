@@ -1,4 +1,4 @@
-package sec08.exam01_threadgroup;
+package threadGroup;
 
 import java.util.Map;
 import java.util.Set;
@@ -9,7 +9,7 @@ public class ThreadInfoExample {
 		autoSaveThread.setName("AutoSaveThread");
 		autoSaveThread.setDaemon(true);
 		autoSaveThread.start();
-		
+
 		Map<Thread, StackTraceElement[]> map = Thread.getAllStackTraces();
 		Set<Thread> threads = map.keySet();
 		for(Thread thread : threads) {
