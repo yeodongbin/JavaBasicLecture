@@ -24,7 +24,7 @@ public class YieldExample {
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {
 		}
-		
+
 		threadA.stop = true;
 		threadB.stop = true;
 	}
