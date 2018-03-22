@@ -12,7 +12,7 @@ class : 자동차 Car
 		정지 >> void stop()
 */
 
-package inheritance;
+package taxi;
 
 public class Car {
 	

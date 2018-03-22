@@ -1,4 +1,4 @@
-package inheritance;
+package taxi;
 
 public class TaxiUser {
 	public static void main(String[] args) {

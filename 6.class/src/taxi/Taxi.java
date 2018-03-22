@@ -1,7 +1,7 @@
 /*
 1km´ç 100¿ø
 */
-package inheritance;
+package taxi;
 
 public class Taxi extends Car {
 	

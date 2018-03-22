@@ -1,7 +1,8 @@
-package inheritance;
+package inheritanceExample;
 
 public class CallTest {
 	public static void main(String[] args) {
+
 		Call call = new Call();
 		System.out.println(call.x);//10
 

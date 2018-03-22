@@ -1,4 +1,4 @@
-package inheritance;
+package inheritanceExample;
 
 public class StarCraft {
 	public static void main(String[] args) {

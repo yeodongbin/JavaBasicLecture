@@ -8,7 +8,7 @@ method
   - 공격 : public [   RT   ] attack([  args  ]) {   }
   - 모드변경 : void setMode(int mode)
 */
-package inheritance;
+package inheritanceExample;
 
 public class Marine {
 	int hp;

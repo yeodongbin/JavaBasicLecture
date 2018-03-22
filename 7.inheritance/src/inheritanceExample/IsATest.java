@@ -1,4 +1,4 @@
-package inheritance;
+package inheritanceExample;
 import java.awt.*;
 
 public class IsATest extends Frame {
