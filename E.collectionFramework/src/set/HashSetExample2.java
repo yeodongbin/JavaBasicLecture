@@ -9,6 +9,8 @@ public class HashSetExample2 {
 		set.add(new Member("È«±æµ¿", 30));
 		set.add(new Member("È«±æµ¿", 30));
 
+		System.out.println(set.hashCode());
+
 		System.out.println("ÃÑ °´Ã¼¼ö : " + set.size());
 	}
 }
