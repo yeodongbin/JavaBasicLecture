@@ -1,4 +1,4 @@
-package list.linkedlist;
+package list.linkedList;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -27,3 +27,7 @@ public class LinkedListExample {
 		System.out.println("LinkedList 걸린시간: " + (endTime - startTime) + " ns");
 	}
 }
+
+//             순차적으로 추가/삭제  중간에추가/삭제  검색
+//ArrayList          ㅇ                                ㅇ
+//LinkedList                         ㅇ
