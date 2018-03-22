@@ -1,4 +1,4 @@
-package inheritanceExample;
+package interfaceExample;
 
 interface aExample {
 	public void sayHello();
