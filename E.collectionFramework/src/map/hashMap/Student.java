@@ -9,6 +9,7 @@ public class Student {
 		this.name = name;
 	}
 
+	//HashMap 에서는 필수적으로 equals(), hashCode() 재정의
 	public boolean equals(Object obj) {
 		if(obj instanceof Student) {
 			Student student = (Student) obj;

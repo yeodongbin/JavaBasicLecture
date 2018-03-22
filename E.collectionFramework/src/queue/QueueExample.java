@@ -22,7 +22,7 @@ public class QueueExample {
 				System.out.println("±Ó≈Â");
 			}
 		}
-		
+
 	}//main
 }
 
