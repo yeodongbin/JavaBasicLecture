@@ -1,4 +1,4 @@
-package problem;
+package problems;
 
 public class Pro6 {
 	public static void main(String[] args) {

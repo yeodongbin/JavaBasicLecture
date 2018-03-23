@@ -1,4 +1,4 @@
-package hello_world;
+package problems;
 public class Star {
 
 	public static void main(String[] args) {

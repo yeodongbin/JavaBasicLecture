@@ -1,4 +1,4 @@
-package hello_world;
+package problems;
 public class Submultiple {
 	
 	public static void main(String[] args) {
