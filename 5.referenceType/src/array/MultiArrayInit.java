@@ -1,5 +1,5 @@
-package hello_world;
-public class ReferenceValue {
+package array;
+public class MultiArrayInit {
 	public static void main(String[] args) {
 		/*
 		 * char a = 'a'; boolean tf = false;
