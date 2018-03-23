@@ -5,11 +5,10 @@ public class Pro2 {
 		int sum = 0;
 		int totalSum = 0;
 
-		for (int i = 1; i <= 28; i = i*3) {
+		for (int i = 1; i <= 28; i = i * 3) {
 			sum = sum + i;
 			totalSum = totalSum + sum;
-			System.out.println(totalSum + " " + sum
-					+ " " + i);
+			System.out.println(totalSum + " " + sum + " " + i);
 		}
 
 		System.out.println(totalSum);

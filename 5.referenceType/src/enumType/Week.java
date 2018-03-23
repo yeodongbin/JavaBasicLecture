@@ -1,4 +1,4 @@
-package array;
+package enumType;
 
 public enum Week {
 MONDAY,

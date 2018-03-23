@@ -1,4 +1,5 @@
 package problems;
+
 public class Star {
 
 	public static void main(String[] args) {
@@ -15,7 +16,7 @@ public class Star {
 			}
 			System.out.println("");
 		}
-		
+
 		for (int i = 1; i <= 5; i++) {
 			if (i <= 3) {
 				for (int j = 0; j < i; j++) {

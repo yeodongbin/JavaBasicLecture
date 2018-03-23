@@ -5,7 +5,7 @@ public class Pro7 {
 		int num1 = 1;
 		int num2 = 1;
 		int num3 = 0;
-		int sum =0;
+		int sum = 0;
 		System.out.print(num1 + " " + num2 + " ");
 
 		sum = num1 + num2;
@@ -15,7 +15,7 @@ public class Pro7 {
 			System.out.print(num3 + " ");
 			num1 = num2;
 			num2 = num3;
-			num3 =0;
+			num3 = 0;
 		}
 
 		System.out.print(" 피보나치 수열의 합 : " + sum);
