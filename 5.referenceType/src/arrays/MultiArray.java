@@ -1,4 +1,4 @@
-package hello_world;
+package arrays;
 public class MultiArray {
 	public static void main(String[] args) {
 		int[][] gugudan0 = {{9,1,9},

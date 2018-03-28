@@ -1,4 +1,4 @@
-package refereance_pro;
+package problems;
 
 public class Pro8 {
 	public static void main(String[] args) {

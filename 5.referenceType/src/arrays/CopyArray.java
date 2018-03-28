@@ -1,4 +1,4 @@
-package hello_world;
+package arrays;
 public class CopyArray {
 
 	public static void main(String[] args) {
