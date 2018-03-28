@@ -1,4 +1,4 @@
-package sec03.exam01_system_in_out;
+package console.system_in_out;
 
 import java.io.InputStream;
 
