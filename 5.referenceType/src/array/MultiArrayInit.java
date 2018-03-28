@@ -3,11 +3,11 @@ public class MultiArrayInit {
 	public static void main(String[] args) {
 		/*
 		 * char a = 'a'; boolean tf = false;
-		 * 
+		 *
 		 * String name = "¿©µ¿ºó"; String name2 = "¿©µ¿ºó"; String name3 = new String("¿©µ¿ºó");
-		 * 
+		 *
 		 * tf = (name.equals(name3));
-		 * 
+		 *
 		 * System.out.println(name); System.out.println(tf);
 		 */
 
@@ -29,7 +29,7 @@ public class MultiArrayInit {
 		num1[1][1] = 70;
 		num1[0][2] = 60;
 		num1[1][2] = 50;
-		
+
 		for (int i = 0; i < 2; i++) {
 			for (int j = 0; j < 3; j++) {
 				System.out.println(num1[i][j]);
