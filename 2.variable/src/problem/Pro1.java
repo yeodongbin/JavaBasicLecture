@@ -1,5 +1,5 @@
 package problem;
-
+//È­Æó¹®Á¦
 public class Pro1 {
 	public static void main(String[] args)	{
 		int fahrenheit = 100;

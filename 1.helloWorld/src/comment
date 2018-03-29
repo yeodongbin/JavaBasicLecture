@@ -30,4 +30,5 @@ F11   Debug 시작
 F8    Debug 계속 진행
 F6   Debug 라인 실행
 F5   Debug 라인 단위로 실행(함수 내부로 들어갑니다.)
+F3   원본 매서드 확인
 Ctrl + Shift + B  현재 커서 라인에 브레이크 포인트(Break point) 설정

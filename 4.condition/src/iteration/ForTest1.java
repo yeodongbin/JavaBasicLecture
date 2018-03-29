@@ -5,6 +5,7 @@ public class ForTest1 {
 		for(int i=1;i<11;i++) {
 			System.out.print(i + "\t");
 		}
+		
 		//System.out.println();
 		//System.out.print("\n");
 		System.out.println("\n0 - 10까지의 짝수 출력하시오.");//0 2 4 6 8 10
