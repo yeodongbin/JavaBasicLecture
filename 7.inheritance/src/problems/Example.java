@@ -1,4 +1,4 @@
-package inheritance_pro5;
+package problems;
 
 public class Example {
 
