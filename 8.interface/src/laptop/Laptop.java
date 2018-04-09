@@ -55,9 +55,7 @@ interface Usb {
 	String capacity = "8GB";
 
 	public abstract void getUsbStyle();
-
 	public abstract void getUsbVersion();
-
 	public abstract void getUsbCapacity();
 }
 
@@ -67,9 +65,7 @@ interface LanCard {
 	String connType = "Small";
 
 	public abstract void getLanCardSpeed();  
-
 	public abstract void getLanCardVersion();
-
 	public abstract void getLanCardConnType();
 }
 
@@ -79,8 +75,6 @@ interface Bluetooth {
 	String connDevice = "Smartphone";
 
 	public abstract void getBluetoothManufacture();
-
 	public abstract void getBluetoothVersion();
-
 	public abstract void getBluetoothConnDevice();
 }
