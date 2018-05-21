@@ -8,7 +8,9 @@ public class ClientExample {
 	public static void main(String[] args) {
 		Socket socket = null;
 
-		try {
+		try(OutputStream os = socket.getOutputStream()
+				)
+		{
 			socket = new Socket();
 			System.out.println("Connection Request");
 
@@ -17,10 +19,10 @@ public class ClientExample {
 
 			byte[] bytes = null;
 			String message;
-			
-			
 
-			OutputStream os = socket.getOutputStream();
+
+
+			//OutputStream os = socket.getOutputStream();
 			message = "Hello Server";
 			bytes = message.getBytes("UTF-8");
 			os.write(bytes);
