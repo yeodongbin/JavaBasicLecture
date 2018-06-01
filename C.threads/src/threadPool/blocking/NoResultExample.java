@@ -6,7 +6,8 @@ import java.util.concurrent.Future;
 
 public class NoResultExample {
 	public static void main(String[] args) {
-		ExecutorService executorService = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
+		ExecutorService executorService =
+				Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
 
 		System.out.println("[累诀 贸府 夸没]");
 		Runnable runnable = new Runnable() {
@@ -19,6 +20,7 @@ public class NoResultExample {
 				System.out.println("[贸府 搬苞] " + sum);
 			}
 		};
+		
 		Future future = executorService.submit(runnable);
 
 		try {

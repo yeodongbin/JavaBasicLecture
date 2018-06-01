@@ -8,9 +8,7 @@ public class CallbackExample {
 	private ExecutorService executorService;
 
 	public CallbackExample() {
-		executorService = Executors.newFixedThreadPool(
-			Runtime.getRuntime().availableProcessors()
-		);
+		executorService = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
 	}
 
 	private CompletionHandler<Integer, Void> callback = new CompletionHandler<Integer, Void>() {
@@ -34,7 +32,7 @@ public class CallbackExample {
 					int intY = Integer.parseInt(y);
 					int result = intX + intY;
 					callback.completed(result, null);
-				} catch(NumberFormatException e) {
+				} catch (NumberFormatException e) {
 					callback.failed(e, null);
 				}
 			}
