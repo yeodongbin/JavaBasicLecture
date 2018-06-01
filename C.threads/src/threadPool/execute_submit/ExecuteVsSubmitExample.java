@@ -1,4 +1,4 @@
-package sec09.exam01_execute_submit;
+package threadPool.execute_submit;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -21,13 +21,13 @@ public class ExecuteVsSubmitExample {
 					int value = Integer.parseInt("»ï");
 				}
 			};
-			
+
 			executorService.execute(runnable);
 			//executorService.submit(runnable);
-			
+
 			Thread.sleep(10);
 		}
-		
+
 		executorService.shutdown();
 	}
 }

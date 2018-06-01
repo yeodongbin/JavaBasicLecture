@@ -1,4 +1,4 @@
-package sec09.exam02_blocking;
+package threadPool.blocking;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.CompletionService;
@@ -13,10 +13,10 @@ public class CompletionServiceExample extends Thread {
 		ExecutorService  executorService = Executors.newFixedThreadPool(
 			Runtime.getRuntime().availableProcessors()
 		);
-		
-		CompletionService<Integer> completionService  = 
+
+		CompletionService<Integer> completionService  =
 				new ExecutorCompletionService<Integer>(executorService);
-		
+
 		System.out.println("[작업 처리 요청]");
 		for(int i=0; i<3; i++) {
 			completionService.submit(new Callable<Integer>() {
@@ -30,7 +30,7 @@ public class CompletionServiceExample extends Thread {
 				}
 			});
 		}
-		
+
 		System.out.println("[처리 완료된 작업 확인]");
 		executorService.submit(new Runnable() {
 			@Override
@@ -46,7 +46,7 @@ public class CompletionServiceExample extends Thread {
 				}
 			}
 		});
-		
+
 		try { Thread.sleep(3000); } catch (InterruptedException e) {}
 		executorService.shutdownNow();
 	}
