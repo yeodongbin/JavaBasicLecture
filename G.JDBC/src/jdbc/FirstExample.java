@@ -23,7 +23,7 @@ public class FirstExample {
 	public static void main(String[] args) {
 		Connection conn = null;
 		Statement stmt = null; //sql ¹®
-		
+
 		try {
 			// STEP 2: Register JDBC driver
 			Class.forName("oracle.jdbc.driver.OracleDriver");
@@ -50,9 +50,9 @@ public class FirstExample {
 				System.out.print("EMPNO: " + empno);
 				System.out.print(", ENAME: " + ename);
 				System.out.print(", JOB: " + job);
-				
+
 			}
-			
+
 			// STEP 6: Clean-up environment
 			rs.close();
 			stmt.close();
