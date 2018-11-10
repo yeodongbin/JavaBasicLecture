@@ -1,4 +1,4 @@
-package sec05.exam04_comparator;
+package tree.comparator;
 
 import java.util.Comparator;
 
@@ -7,12 +7,12 @@ public class DescendingComparator implements Comparator<Fruit> {
 	public int compare(Fruit o1, Fruit o2) {
 		if(o1.price < o2.price) return 1;
 		else if(o1.price == o2.price) return 0;
-		else return -1;	
+		else return -1;
 	}
 }
 
 
-/*public class DescendingComparator implements Comparator {	
+/*public class DescendingComparator implements Comparator {
 	public int compare(Object o1, Object o2) {
 		Fruit fruit1 = (Fruit) o1;
 		Fruit fruit2 = (Fruit) o2;

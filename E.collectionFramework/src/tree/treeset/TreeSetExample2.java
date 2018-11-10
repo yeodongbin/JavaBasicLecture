@@ -1,4 +1,4 @@
-package sec05.exam01_treeset;
+package tree.treeset;
 
 import java.util.NavigableSet;
 import java.util.TreeSet;

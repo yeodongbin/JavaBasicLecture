@@ -1,4 +1,4 @@
-package sec05.exam03_comparable;
+package tree.comparable;
 
 import java.util.Iterator;
 import java.util.TreeSet;
