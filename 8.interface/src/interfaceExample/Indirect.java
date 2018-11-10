@@ -9,7 +9,7 @@ class Ai {
 }
 
 class Bi implements Indirect_interface{
-	public void methodB() {
+	 public void methodB() {
 		System.out.println("play in B class");
 	}
 }

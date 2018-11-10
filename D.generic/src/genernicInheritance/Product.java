@@ -1,4 +1,4 @@
-package generic_extends_implements;
+package genernicInheritance;
 
 public class Product<T, M> {
 	private T kind;

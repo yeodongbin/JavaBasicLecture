@@ -1,4 +1,4 @@
-package generic_extends_implements;
+package genernicInheritance;
 
 public class ChildProductAndStorageExample {
 	public static void main(String[] args) {

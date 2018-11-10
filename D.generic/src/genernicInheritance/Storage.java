@@ -1,4 +1,4 @@
-package generic_extends_implements;
+package genernicInheritance;
 
 public interface Storage<T> {
 	public void add(T item, int index);
