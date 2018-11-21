@@ -9,7 +9,7 @@ import javax.swing.JFrame;
 public class FrameEx1 {
 
 	public static void main(String[] args) {
-
+		//Method 1
 		JFrame frame = new JFrame();
 		frame.setSize(500, 300);
 		
@@ -19,7 +19,7 @@ public class FrameEx1 {
 		frame.setLocation(screenSize.width/2 -150, screenSize.height/2 - 100);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setVisible(true);
-		
+		//Method 2
 		LaunchJFrame jframe = new LaunchJFrame();
 		new JFrame();
 		

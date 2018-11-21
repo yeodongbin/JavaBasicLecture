@@ -1,4 +1,4 @@
-package javaswing_windowbuilder;
+package javaswingWindowBuilder;
 
 import java.awt.EventQueue;
 
