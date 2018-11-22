@@ -24,7 +24,6 @@ public class Login extends JFrame{
 		
 		setVisible(true);
 		setSize(600,400);
-		set
 	}
 	
 	public static void main(String[] args) {
