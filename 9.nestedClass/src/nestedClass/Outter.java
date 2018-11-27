@@ -7,7 +7,8 @@ public class Outter {
 	{
 		System.out.println("Outter-method");
 	}
-
+	
+	// Instance Member Class
 	class Nested {
 		String field = "Nested-field";
 

@@ -6,6 +6,7 @@ public class OutterExample {
 		Outter outter = new Outter();
 		Outter.Nested nested = outter.new Nested();
 		nested.print();
+		nested.method();
 	}
 
 }
