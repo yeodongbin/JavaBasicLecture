@@ -1,4 +1,4 @@
-package javaswing_tutorial;
+package javaSwingTutorial;
 
 import java.awt.BorderLayout;
 import java.awt.FlowLayout;

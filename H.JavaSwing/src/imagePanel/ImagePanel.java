@@ -1,4 +1,4 @@
-package javaswing_Login;
+package imagePanel;
 
 import java.awt.Dimension;
 import java.awt.Graphics;

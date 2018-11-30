@@ -1,4 +1,4 @@
-package javaswing_MVC;
+package javaSwingMVC;
 
 import javax.swing.table.DefaultTableModel;
 
