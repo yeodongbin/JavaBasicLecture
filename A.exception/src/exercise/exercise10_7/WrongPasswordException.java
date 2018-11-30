@@ -1,4 +1,4 @@
-package exercise10_7;
+package exercise.exercise10_7;
 
 public class WrongPasswordException {
 	public WrongPasswordException() {}
