@@ -1,6 +1,6 @@
-package inheritance.protectedKeyword;
+package protectedKeyword;
 
-import inheritance.finalKeyword.Car;
+import finalKeyword.Car;
 
 public class SportsCar2 extends Car {
 	@Override

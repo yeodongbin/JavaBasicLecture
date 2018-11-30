@@ -1,4 +1,4 @@
-package inheritance.polymorphism;
+package polymorphism;
 
 public class Child extends Parent {
 	@Override

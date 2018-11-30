@@ -1,4 +1,4 @@
-package inheritance.finalKeyword;
+package finalKeyword;
 
 //public final class Car {
 public class Car {

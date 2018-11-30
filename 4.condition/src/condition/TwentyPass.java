@@ -1,4 +1,4 @@
-package conditionLoopFunction;
+package condition;
 
 import java.util.Scanner;
 

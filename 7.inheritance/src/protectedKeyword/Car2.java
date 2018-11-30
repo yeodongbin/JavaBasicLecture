@@ -1,6 +1,6 @@
-package inheritance.protectedKeyword;
+package protectedKeyword;
 
-import inheritance.finalKeyword.*;
+import finalKeyword.*;
 
 //public final class Car {
 public class Car2 {

@@ -1,4 +1,4 @@
-package inheritance.starCraft;
+package starCraft;
 
 public class SCV extends Worker {
 

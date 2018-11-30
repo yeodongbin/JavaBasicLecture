@@ -1,4 +1,4 @@
-package inheritance.starCraft;
+package starCraft;
 
 public class Marine extends Soilder{
 	void stimpack() {

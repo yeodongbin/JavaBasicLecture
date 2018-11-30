@@ -1,4 +1,4 @@
-package interface_object.stackQueue;
+package stackQueue;
 
 public class StackExample {
 

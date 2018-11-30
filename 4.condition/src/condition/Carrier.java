@@ -27,7 +27,7 @@
 //예제 출력 2 
 //-1
 
-package conditionLoopFunction;
+package condition;
 
 import java.util.Scanner;
 

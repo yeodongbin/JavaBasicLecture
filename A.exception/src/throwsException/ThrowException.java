@@ -1,4 +1,4 @@
-package exception;
+package throwsException;
 
 public class ThrowException {
 
@@ -11,9 +11,7 @@ public class ThrowException {
 		}
 	}
 
-	public static void aMethod() throws NullPointerException, 
-										ClassCastException 
-	{
+	public static void aMethod() throws NullPointerException, ClassCastException {
 		try {
 			String data = null;
 			System.out.println(data.toString());

@@ -1,4 +1,4 @@
-package inheritance.finalKeyword;
+package finalKeyword;
 
 public class SportsCar extends Car {
 	@Override

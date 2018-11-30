@@ -1,4 +1,4 @@
-package inheritance.polymorphism;
+package polymorphism;
 
 public class Parent {
 	public void method1() {

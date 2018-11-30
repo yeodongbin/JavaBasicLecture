@@ -1,4 +1,4 @@
-package inheritance.example;
+package problem;
 
 public class Pro5 {
 
