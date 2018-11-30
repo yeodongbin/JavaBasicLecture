@@ -1,4 +1,4 @@
-package problem_1;
+package problem;
 
 public interface Flyer {
 	int fast = 100;

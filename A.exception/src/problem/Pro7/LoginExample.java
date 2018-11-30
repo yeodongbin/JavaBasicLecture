@@ -1,4 +1,4 @@
-package exercise.exercise10_7;
+package problem.Pro7;
 
 public class LoginExample {
 
