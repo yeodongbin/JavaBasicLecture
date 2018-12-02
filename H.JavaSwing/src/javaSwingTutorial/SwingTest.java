@@ -11,6 +11,7 @@ class SwingTest{
        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
        frame.setSize(400,400);
        JButton button = new JButton("Press");
+       
     // Adds Button to content pane of frame
        frame.getContentPane().add(button); 
        frame.setVisible(true);

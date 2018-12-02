@@ -95,7 +95,6 @@ class NullContainerEx extends JFrame {
 	}
 }
 
-
 public class Layout {
 
 	public static void main(String[] args) {

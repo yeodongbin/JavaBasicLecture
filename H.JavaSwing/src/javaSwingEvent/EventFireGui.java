@@ -8,7 +8,7 @@ public class EventFireGui extends JFrame {
 	public EventFireGui() {
 		super("Event Firer");
 
-		setBounds(200, 200, 300, 200);
+		setBounds(500, 300, 300, 300);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setVisible(true);
 	}

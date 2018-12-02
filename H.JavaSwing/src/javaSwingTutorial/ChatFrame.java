@@ -41,6 +41,7 @@ public class ChatFrame {
 		JButton send = new JButton("Send");
 		JButton reset = new JButton("Reset");
 		panel.add(label); // Components Added using Flow Layout
+		
 		//panel.add(label); // Components Added using Flow Layout
 		panel.add(tf);
 		panel.add(send);

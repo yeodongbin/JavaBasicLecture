@@ -22,7 +22,6 @@ class ImagePanel extends JPanel {
 	public ImagePanel(Image img) {
 		this.img = img;
 		setSize(new Dimension(img.getWidth(null), img.getHeight(null)));
-		// setPreferredSize(new Dimension(im
 		setLayout(null);
 	}
 
