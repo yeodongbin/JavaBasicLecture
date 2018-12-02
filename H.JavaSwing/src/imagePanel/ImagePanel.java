@@ -24,16 +24,16 @@ public class ImagePanel extends JPanel {
 
 	public static void main(String[] args) {
 		JFrame frame = new JFrame("ImagePanel");
-		frame.setSize(400,65);
 		frame.setLocationRelativeTo(null);
 		frame.setVisible(true);
-		
+
 		ImagePanel panel = new ImagePanel(new ImageIcon("./images/uni.jpg").getImage());
 		frame.add(panel);
-		frame.pack();
-		
+		frame.setPreferredSize(new Dimension(650, 400));
+	    frame.pack();
+
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-	
+
 	}
 
 }
