@@ -1,24 +1,21 @@
 package nestedClass.advance;
 
-public class Main { // 파일과 동일
+public class Main {
 
 	public static void main(String[] args) {
 		A a = new A();
-
-		// Instance Member Class
-		A.B b = a.new B();
-		b.field1 =3 ;
-		b.method1();
-
-		// Static Member Class
-		A.C c = new A.C();
-		c.field1 = 3;
-		c.method1();
-		A.C.field2 =3;
-		A.C.method2();
 		
-		// Local Class
-		a.method();
+		A.B b = a.new B(); //인스턴스
+		b.fieldB = 100;
+		b.methodB();
+		
+		A.C c = new A.C(); //정적
+		c.fieldC = 100;
+		c.methodC();
+		
+		a.method(10, 20); //class D 생성
+		
+		
 	}
 
 }

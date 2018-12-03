@@ -1,4 +1,4 @@
-package javaSwingTutorial;
+package javaSwingTutorial.swingTest;
 
 import java.awt.Choice;
 import java.awt.List;

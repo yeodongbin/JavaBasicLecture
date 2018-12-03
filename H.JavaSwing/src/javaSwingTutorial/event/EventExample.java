@@ -1,4 +1,4 @@
-package javaSwingTutorial;
+package javaSwingTutorial.event;
 
 import java.awt.BorderLayout;
 import java.awt.Dimension;
@@ -12,7 +12,7 @@ import javax.swing.JPanel;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
-public class FrameEx2 {
+public class EventExample {
 
 	public static void main(String[] args) {
 		JFrame frame = new JFrame();
