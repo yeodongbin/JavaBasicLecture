@@ -16,9 +16,12 @@ public class FrameEx1 {
 		Toolkit toolkit = Toolkit.getDefaultToolkit();
 		Dimension screenSize = toolkit.getScreenSize();
 		frame.setTitle("First main Frame");
+		frame.setBounds(100, 100, 800, 600);
 		frame.setLocation(screenSize.width/2 -150, screenSize.height/2 - 100);
+		frame.setResizable(false);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setVisible(true);
+		
 		//Method 2
 		LaunchJFrame jframe = new LaunchJFrame();
 		new JFrame();

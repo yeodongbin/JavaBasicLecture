@@ -1,4 +1,4 @@
-package javaswingWindowBuilder;
+package javaSwingTutorial.swingTest;
 
 import javax.swing.*;
 import java.awt.*;
