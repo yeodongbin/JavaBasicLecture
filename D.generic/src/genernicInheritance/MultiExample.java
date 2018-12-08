@@ -1,4 +1,4 @@
-package genericExample;
+package genernicInheritance;
 
 class Product <T, M> {
 

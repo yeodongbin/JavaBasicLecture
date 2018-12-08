@@ -3,6 +3,8 @@ package priorityThread;
 class CalcThread extends Thread {
 	public CalcThread(String name) {
 		setName(name);
+		
+		
 	}
 
 	public void run() {
