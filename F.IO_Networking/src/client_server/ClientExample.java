@@ -1,16 +1,15 @@
 package client_server;
 
-import java.io.*;
-import java.net.*;
-import java.util.Scanner;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.net.InetSocketAddress;
+import java.net.Socket;
 
 public class ClientExample {
 	public static void main(String[] args) {
 		Socket socket = null;
 
-		try(OutputStream os = socket.getOutputStream()
-				)
-		{
+		try {
 			socket = new Socket();
 			System.out.println("Connection Request");
 
@@ -20,9 +19,7 @@ public class ClientExample {
 			byte[] bytes = null;
 			String message;
 
-
-
-			//OutputStream os = socket.getOutputStream();
+			OutputStream os = socket.getOutputStream();
 			message = "Hello Server";
 			bytes = message.getBytes("UTF-8");
 			os.write(bytes);
@@ -37,17 +34,16 @@ public class ClientExample {
 
 			os.close();
 			is.close();
-		} catch (Exception e) {
-			e.printStackTrace();
+		} catch (Exception e1) {
+			e1.printStackTrace();
 		}
 
 		if (!socket.isClosed()) {
 			try {
 				socket.close();
-			} catch (Exception e) {
-				e.printStackTrace();
+			} catch (Exception e2) {
+				e2.printStackTrace();
 			}
 		}
-
 	}// main
 }

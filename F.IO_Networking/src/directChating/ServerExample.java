@@ -18,7 +18,7 @@ public class ServerExample {
    
    static void startServer() throws IOException {
       serverSocket = new ServerSocket();
-      serverSocket.bind(new InetSocketAddress("192.168.18.110", 5001));
+      serverSocket.bind(new InetSocketAddress("localhost", 5001));
       System.out.println("연결 대기");
       socket = serverSocket.accept();
       isa = (InetSocketAddress)socket.getRemoteSocketAddress();

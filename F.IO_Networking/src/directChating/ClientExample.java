@@ -29,10 +29,12 @@ public class ClientExample {
       os.close();
       socket.close();
    }
+   
    public static void main(String[] args) throws IOException {
       ClientExample.startClient();
       receiveMessage = null;
       sendMessage = null;
+      
       while(true) {
          if(is.available() != 0) {
             bytes = new byte[100];
