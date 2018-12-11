@@ -1,8 +1,8 @@
-//1.JDBC µå¶óÀÌ¹ö ·Îµù
-//2. Connection ¸Î±â
-//3. SQL ½ÇÇà
-//4. [SQL¹®ÀÌ select¹®ÀÌ¾ú´Ù¸é ResultSetÀ» ÀÌ¿ëÇÑ ½ÇÇà°á°ú Ã³¸®]
-//5. ÀÚ¿ø ¹İÈ¯
+//1.JDBC ë“œë¼ì´ë²„ ë¡œë”©
+//2. Connection ë§ºê¸°
+//3. SQL ì‹¤í–‰
+//4. [SQLë¬¸ì´ selectë¬¸ì´ì—ˆë‹¤ë©´ ResultSetì„ ì´ìš©í•œ ì‹¤í–‰ê²°ê³¼ ì²˜ë¦¬]
+//5. ìì› ë°˜í™˜
 
 package jdbc;
 
@@ -13,8 +13,8 @@ public class FirstExample {
 	// JDBC driver name and database URL
 	static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
 	static final String DB_URL = "jdbc:oracle:thin:@127.0.0.1:1521:myoracle";
-	//SELECT instance FROM v$thread; // SIDÈ®ÀÎ¹æ¹ı
-	//SELECT * FROM PRODUCT_COMPONENT_VERSION; // ÀüÃ¼ ¹öÀüÈ®ÀÎ
+	//SELECT instance FROM v$thread; // SIDí™•ì¸ë°©ë²•
+	//SELECT * FROM PRODUCT_COMPONENT_VERSION; // ì „ì²´ ë²„ì „í™•ì¸
 
 	// Database credentials
 	static final String USER = "ora_user";
@@ -22,7 +22,7 @@ public class FirstExample {
 
 	public static void main(String[] args) {
 		Connection conn = null;
-		Statement stmt = null; //sql ¹®
+		Statement stmt = null; //sql ë¬¸
 
 		try {
 			// STEP 2: Register JDBC driver
@@ -67,6 +67,7 @@ public class FirstExample {
 					stmt.close();
 			} catch (SQLException se2) {
 			} // nothing we can do
+			
 			try {
 				if (conn != null)
 					conn.close();

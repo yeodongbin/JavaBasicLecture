@@ -5,7 +5,7 @@ import java.sql.*;
 public class GetDB {
 
 	public static void main(String[] args) {
-		String DB_URL = "jdbc:oracle:thin@localhost:1521:myoracle";
+		String DB_URL = "jdbc:oracle:thin:@localhost:1521:myoracle";
 		String DB_USER = "ora_user";
 		String DB_PASSWORD = "yeo";
 
@@ -16,17 +16,17 @@ public class GetDB {
 		String query = "SELECT * FROM NAMECARD";
 
 		try {
-			// µå¶óÀÌ¹ö¸¦ ·ÎµùÇÑ´Ù.
+			// ï¿½ë±¶ï¿½ì”ªï¿½ì” è¸°ê¾¨ï¿½ï¿½ æ¿¡ì’•ëµ«ï¿½ë¸³ï¿½ë–Ž.
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		}
 
 		try {
-			// µ¥ÀÌÅÍº£ÀÌ½ºÀÇ ¿¬°áÀ» ¼³Á¤ÇÑ´Ù.
+			// ï¿½ëœ²ï¿½ì” ï¿½ê½£è¸°ì¢Žì” ï¿½ë’ªï¿½ì“½ ï¿½ë¿°å¯ƒê³—ì“£ ï¿½ê½•ï¿½ì ™ï¿½ë¸³ï¿½ë–Ž.
 			conn = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);
 
-			// Statement¸¦ °¡Á®¿Â´Ù.
+			// Statementç‘œï¿½ åª›ï¿½ï¿½ì¡‡ï¿½ì‚©ï¿½ë–Ž.
 			stmt = conn.createStatement();
 
 			rs = stmt.executeQuery(query); // query
@@ -34,15 +34,19 @@ public class GetDB {
 			while (rs.next()) {
 				String no = rs.getString(1);
 
-				// °á°ú¸¦ Ãâ·ÂÇÑ´Ù.
+				// å¯ƒê³Œë‚µç‘œï¿½ ç•°ì’•ì °ï¿½ë¸³ï¿½ë–Ž.
 				System.out.println(no);
 				/*
-				 * String ename = rs.getString(2); String job = rs.getString(3); String mgr =
-				 * rs.getString(4); String hiredate = rs.getString(5); String sal =
-				 * rs.getString(6); String comm = rs.getString(7); String depno =
-				 * rs.getString(8);
+				 * String ename = rs.getString(2); 
+				 * String job = rs.getString(3); 
+				 * String mgr = rs.getString(4); 
+				 * String hiredate = rs.getString(5); 
+				 * String sal = rs.getString(6); 
+				 * String comm = rs.getString(7); 
+				 * String depno = rs.getString(8);
 				 * 
-				 * // °á°ú¸¦ Ãâ·ÂÇÑ´Ù. System.out.println( empno + " : " + ename + " : " + job + " : "
+				 * // å¯ƒê³Œë‚µç‘œï¿½ ç•°ì’•ì °ï¿½ë¸³ï¿½ë–Ž. 
+				 * System.out.println( empno + " : " + ename + " : " + job + " : "
 				 * + mgr + " : " + hiredate + " : " + sal + " : " + comm + " : " + depno);
 				 */
 			}
@@ -50,17 +54,15 @@ public class GetDB {
 			e.printStackTrace();
 		} finally {
 			try {
-				// ResultSet¸¦ ´Ý´Â´Ù.
+				// ResultSetç‘œï¿½ ï¿½ë–•ï¿½ë’—ï¿½ë–Ž.
 				rs.close();
-				// Statement¸¦ ´Ý´Â´Ù.
+				// Statementç‘œï¿½ ï¿½ë–•ï¿½ë’—ï¿½ë–Ž.
 				stmt.close();
-				// Connection¸¦ ´Ý´Â´Ù.
+				// Connectionç‘œï¿½ ï¿½ë–•ï¿½ë’—ï¿½ë–Ž.
 				conn.close();
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}
 		}
-
 	} // main()
-
 }

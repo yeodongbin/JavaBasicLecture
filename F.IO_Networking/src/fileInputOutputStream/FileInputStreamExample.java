@@ -9,6 +9,7 @@ public class FileInputStreamExample {
 		
 		/*
 		File file = new File(filePath);
+		
 		try (FileInputStream fis = new FileInputStream(file)){
 		*/
 		
