@@ -91,16 +91,15 @@ class NullContainerEx extends JFrame {
 	
 		setSize(300, 200);
 		setVisible(true);
-		
 	}
 }
 
 public class Layout {
 
 	public static void main(String[] args) {
-		new FlowLayoutEx();
-		new BorderLayoutEx();
-		new GridLayoutEx();
+		//new FlowLayoutEx();
+		//new BorderLayoutEx();
+		//new GridLayoutEx();
 		new NullContainerEx();
 	}
 }

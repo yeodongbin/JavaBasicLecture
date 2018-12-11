@@ -1,4 +1,4 @@
-package javaSwingTutorial.swingTest;
+package javaSwingTutorial.component;
 
 import javax.swing.*;
 import java.awt.*;

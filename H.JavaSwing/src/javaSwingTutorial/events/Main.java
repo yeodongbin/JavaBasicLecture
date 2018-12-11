@@ -1,4 +1,4 @@
-package javaSwingEvent;
+package javaSwingTutorial.events;
 
 public class Main {
 

@@ -1,11 +1,11 @@
-package javaSwingTutorial.swingTest;
+package javaSwingTutorial.component;
 
 import java.awt.Choice;
 import java.awt.List;
 
 import javax.swing.JFrame;
 
-public class ChoiceEx1 {
+public class ChoiceList {
 
 	public static void main(String[] args) {
 		JFrame jfr = new JFrame("Choice -Select");
