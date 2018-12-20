@@ -2,8 +2,7 @@
 ## H.JavaSwing
 ### javaSwingMVC
 #### MVC Pattern (MVC : Model–View–Controller)
-애플리케이션을 Model, View, Controller 영역으로 구분하여 개발합니다. 
-영역간의 결합도를 최소화한 디자인 패턴입니다. 
+애플리케이션을 Model, View, Controller 영역으로 구분하여 개발합니다. 영역간의 결합도를 최소화한 디자인 패턴입니다. 
 장점은 디자이너, 개발자 영역이 분리됨으로써 분업화가 쉬워지며, 유지보수가 용이합니다.
 
 * Controller
