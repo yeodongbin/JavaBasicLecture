@@ -11,7 +11,7 @@ Example Code : javaSwingMVC
 * Model
 모델의 상태에 변화가 있을 때 컨트롤러와 뷰에 이를 통보한다. 이와 같은 통보를 통해서 뷰는 최신의 결과를 보여줄 수 있고, 컨트롤러는 모델의 변화에 따른 적용 가능한 명령을 추가·제거·수정할 수 있다. 어떤 MVC 구현에서는 통보 대신 뷰나 컨트롤러가 직접 모델의 상태를 읽어 오기도 한다.
 
-<code>
+<pre><code>
 public class Student {
    private String rollNo;
    private String name;
@@ -46,7 +46,7 @@ public class StudentView {
       System.out.println("Roll No: " + studentRollNo);
    }
 }
-</code>
+</code></pre>
 
 * Controller
 모델에 명령을 보냄으로써 모델의 상태를 변경할 수 있다. 
