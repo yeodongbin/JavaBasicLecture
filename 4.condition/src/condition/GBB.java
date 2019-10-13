@@ -10,7 +10,8 @@ public class GBB {
 		int com = (int) (Math.random() * 3);
 
 		String myStr = "";
-		String comStr = "";
+		String comStr =
+				"";
 		String resultStr = "";
 		int result = (my - com + 2) % 3;
 
