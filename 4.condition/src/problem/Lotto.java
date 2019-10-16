@@ -1,4 +1,4 @@
-package condition;
+package problem;
 
 public class Lotto {
 	public static void main(String[] args) {
