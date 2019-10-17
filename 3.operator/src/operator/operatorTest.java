@@ -15,6 +15,6 @@ public class operatorTest {
 		}
 
 		System.out.println(b);
-		return;y
+		return;
 	}
 }

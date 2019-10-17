@@ -9,7 +9,7 @@ package iteration;
 91 92 93         99 100
 */
 
-public class ForTest2 {
+public class For2 {
 	public static void main(String[] args) {
 		int x = 1;
 		for(;;) {

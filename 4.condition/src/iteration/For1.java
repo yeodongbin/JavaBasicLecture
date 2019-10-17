@@ -1,5 +1,5 @@
 package iteration;
-public class ForTest1 {
+public class For1 {
 	public static void main(String[] args) {
 		System.out.println("1 - 10까지 출력하시오.");//1 2 3 4 .. 10
 		for(int i=1;i<11;i++) {
@@ -21,22 +21,6 @@ public class ForTest1 {
 		System.out.println("\n1 - 10까지의 수를 거꾸로 출력하시오.");//10 9 8 7 ... 2 1
 		for(int i=10;i>0;i--) {
 			System.out.print(i + "\t");
-		}
-
-
-		/*
-		**** 3단 ****
-		3 * 1 = 3
-		3 * 2 = 6
-
-
-		3 * 9 = 27
-		*/
-		int dan = 3;
-		System.out.println("\n구구단중 " + dan + "단을 출력하시오.");
-		System.out.println("**** " + dan + "단 ****");
-		for(int i=1;i<10;i++) {
-			System.out.println(dan + " * " + i + " = " + dan * i);
 		}
 	}
 }
