@@ -1,4 +1,4 @@
-package arrayExample;
+package stringType;
 
 public class StringClass {
 

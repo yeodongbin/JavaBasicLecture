@@ -1,4 +1,4 @@
-package arrayExample;
+package arrayExample.copy;
 
 public class CopyArray {
 
