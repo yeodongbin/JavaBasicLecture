@@ -1,4 +1,4 @@
-package homeworks;
+package problem.homeworks;
 
 public class ClassAa {
 	public static void main(String[] args) {

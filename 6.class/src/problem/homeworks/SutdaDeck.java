@@ -1,4 +1,4 @@
-package homeworks;
+package problem.homeworks;
 
 public class SutdaDeck {
 	final int CARD_NUM = 30;

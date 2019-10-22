@@ -1,4 +1,4 @@
-package homeworks;
+package problem.homeworks;
 
 public class SutdaCard {
 	int num;

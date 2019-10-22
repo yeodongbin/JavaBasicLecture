@@ -1,4 +1,4 @@
-package calculator;
+package static_calculator;
 
 public class Calculator {
 static double pi = 3.14159;

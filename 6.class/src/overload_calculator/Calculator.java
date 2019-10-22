@@ -1,4 +1,4 @@
-package overloading;
+package overload_calculator;
 
 public class Calculator {
 	//정사각형의 넓이

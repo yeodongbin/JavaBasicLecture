@@ -1,4 +1,4 @@
-package calculator;
+package static_calculator;
 
 public class CalculatorExample {
 	public static void main(String[] args) {

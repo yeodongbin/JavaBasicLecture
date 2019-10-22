@@ -1,7 +1,7 @@
 /*
 1km´ç 100¿ø
 */
-package taxi;
+package inheritance_taxi;
 
 public class Taxi extends Car {
 	
