@@ -10,6 +10,7 @@ public class Array {
 			sum1 += scores[i];
 		}
 		System.out.println(sum1);
+		
 		System.out.println(scores.length);
 
 		int sum2 = add(new int[] { 83, 90, 87 });
