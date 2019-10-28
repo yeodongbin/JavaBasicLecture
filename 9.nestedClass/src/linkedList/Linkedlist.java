@@ -6,6 +6,7 @@ public class Linkedlist {
 	Node rear;
 	int size = 0;
 
+	
 	void firstNode(int data) {
 		Node newNode = new Node(data);
 		head = newNode;

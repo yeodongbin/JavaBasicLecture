@@ -1,4 +1,4 @@
-package problem;
+package problem.pro5;
 
 public class AnonymousExample {
 

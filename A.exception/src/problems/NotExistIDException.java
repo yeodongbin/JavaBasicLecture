@@ -1,4 +1,4 @@
-package problem.Pro7;
+package problems;
 
 public class NotExistIDException {
 	public NotExistIDException( ) {}
