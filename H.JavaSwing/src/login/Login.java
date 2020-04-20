@@ -16,19 +16,7 @@ import javax.swing.JPanel;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
-class ImagePanel extends JPanel {
-	private Image img;
 
-	public ImagePanel(Image img) {
-		this.img = img;
-		setSize(new Dimension(img.getWidth(null), img.getHeight(null)));
-		setLayout(null);
-	}
-
-	public void paintComponent(Graphics g) {
-		g.drawImage(img, 0, 0, null);
-	}
-}
 
 public class Login extends JFrame {
 
@@ -74,4 +62,18 @@ public class Login extends JFrame {
 		new Login();
 	}
 
+}
+
+class ImagePanel extends JPanel {
+	private Image img;
+
+	public ImagePanel(Image img) {
+		this.img = img;
+		setSize(new Dimension(img.getWidth(null), img.getHeight(null)));
+		setLayout(null);
+	}
+
+	public void paintComponent(Graphics g) {
+		g.drawImage(img, 0, 0, null);
+	}
 }

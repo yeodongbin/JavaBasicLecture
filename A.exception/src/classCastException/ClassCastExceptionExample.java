@@ -1,4 +1,4 @@
-package ClassCastException;
+package classCastException;
 
 public class ClassCastExceptionExample {
 
