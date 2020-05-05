@@ -3,21 +3,33 @@ package problem;
 public class CombinationPro {
 
 	public static void main(String[] args) {
-		int count = 0;
+
 		int num = 5;
 
-		for (int i = 1; i < (num + 1); i++) {
-			for (int j = 1; j < (num + 1); j++) {
-				for (int k = 1; k < (num + 1); k++) {
-					if ((i < j) && (j < k) && (i < k)) {
-						count++;
-						System.out.println(i + " " + j + " " + k);
+		int count = 0;
+		int countP = 0;
+		int countC = 0;
+		
+		for (int i = 1; i<6; i++) {
+			for (int j = 1; j<6; j++) {
+				for (int k = 1; k<6; k++) {
+					System.out.println("("+i+", "+j+", "+k+")");
+					count++;
+					
+					if ((i!=j)&&(j!=k)&&(i!=k) ) {
+						countP++;
+					}
+					
+					if ((i<j)&&(j<k)&&(i<k) ) {
+						countC++;
 					}
 				}
 			}
-		} 
+		}
+		System.out.println("전체 경우의 수 : " + count);
+		System.out.println("전체 순열의 수 : " + countP);
+		System.out.println("전체 조합의 수 : " + countC);
 
-		System.out.println("5C3=" + count);
 
 	}// main
 }

@@ -3,7 +3,7 @@ package linkedList;
 public class LinkedListEx {
 
 	public static void main(String[] args) {
-		Linkedlist list = new Linkedlist();
+		LinkedList list = new LinkedList();
 		
 		list.firstNode(10);
 		list.addRearNode(20);
