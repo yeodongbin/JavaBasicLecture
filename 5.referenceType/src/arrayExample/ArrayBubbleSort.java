@@ -1,54 +1,30 @@
 package arrayExample;
 
 public class ArrayBubbleSort {
-	static int[] array = new int[] { 10, 5, 9, 1, 8 };
-	
-	public static void main(String[] args) {
-		
-		int temp = 0;
 
-		for (int i = 0; i < array.length - 1; i++) {
-			for (int j = 1; j < array.length; j++) {
-				if (array[j - 1] > array[j]) {
-					swap(j-1, j);
+	public static void main(String[] args) {
+		int[] arr = {10,5,9,1,8};
+		
+
+		for (int i = 0; i<arr.length-1; i++) {
+			for (int j = 1; j<arr.length; j++) {
+				if (arr[j-1] < arr[j]) {
+					swap(arr, j);
 				}
 			}
 		}
-
-		for (int j = 0; j < array.length; j++) {
-			System.out.println(array[j]);
+		print(arr);
+	}
+	public static void swap(int[] arr, int j) {
+		int temp = 0;
+		temp = arr[j-1];
+		arr[j-1] = arr[j];
+		arr[j]= temp;
+	}
+	
+	public static void print(int[] arr) {
+		for (int i=0;i<arr.length;i++) {
+			System.out.print(arr[i]+" ");
 		}
 	}
-	
-	public static void swap(int a, int b) {
-		int temp;
-		temp = array[a];
-		array[a] = array[b];
-		array[b] = temp;
-	}
-	
-//	public static void main(String[] args) {
-//		int[] array = new int[] { 10, 5, 9, 1, 8 };
-//		int temp = 0;
-//
-//		for (int i = 0; i < array.length - 1; i++) {
-//			for (int j = 1; j < array.length; j++) {
-//				if (array[j - 1] > array[j]) {
-//					swap(j-1, j, array);
-//				}
-//			}
-//		}
-//
-//		for (int j = 0; j < array.length; j++) {
-//			System.out.println(array[j]);
-//		}
-//	}
-//	
-//	public static void swap(int a, int b, int[] arr) {
-//		int temp;
-//		temp = arr[a];
-//		arr[a] = arr[b];
-//		arr[b] = temp;
-//	}
-
 }

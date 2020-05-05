@@ -40,5 +40,8 @@ public class ArrayLotto {
 		for (int i = 0;i<lotto2.length;i++) {
 			System.out.print(lotto2[i]+ " ");
 		}
+		
+		
 	}
+
 }

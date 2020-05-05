@@ -3,18 +3,22 @@ package arrayExample;
 public class ArrayPibo {
 
 	public static void main(String[] args) {
-		int[] pibo = new int[10]; 
+
+		int[] arr = new int[100];
 		
-		pibo[0] = 0;
-		pibo[1] = 1;
+		arr[0] =0;
+		arr[1] =1;
 		
-		for (int i=0; i<(pibo.length - 2);i++) {
-			pibo[i+2] = pibo[i] + pibo[i+1];
-		
+		for (int i=2;i<arr.length;i++) {
+			arr[i] = arr[i-1] + arr[i-2];
 		}
 		
-		for (int i=0; i<pibo.length;i++) {
-			System.out.print(pibo[i]+ " ");
+		for (int i=0;i<arr.length;i++) {
+			System.out.print(arr[i] + " ");
 		}
+		
+		
+		
 	}
+
 }
