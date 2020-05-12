@@ -50,7 +50,6 @@ public class FirstExample {
 				System.out.print("EMPNO: " + empno);
 				System.out.print(", ENAME: " + ename);
 				System.out.print(", JOB: " + job);
-
 			}
 
 			// STEP 6: Clean-up environment
@@ -63,14 +62,16 @@ public class FirstExample {
 			e.printStackTrace(); // Handle errors for Class.forName
 		} finally { // finally block used to close resources
 			try {
-				if (stmt != null)
+				if (stmt != null) {
 					stmt.close();
+				}
 			} catch (SQLException se2) {
 			} // nothing we can do
 			
 			try {
-				if (conn != null)
+				if (conn != null) {
 					conn.close();
+				}
 			} catch (SQLException se) {
 				se.printStackTrace();
 			} // end finally try
