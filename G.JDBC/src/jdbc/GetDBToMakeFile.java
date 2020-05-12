@@ -16,7 +16,6 @@ public class GetDBToMakeFile {
 		String URL = "jdbc:oracle:thin:@localhost:1521:xe";
 		String ID = "ora_user";
 		String PW = "yeo";
-
 		String query = "SELECT * FROM ENROL";
 
 		Connection conn = null;
@@ -32,19 +31,16 @@ public class GetDBToMakeFile {
 			dir.mkdirs();
 		}
 
-		// DB 드라이버 로딩
 		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		} // 1try end
 
-		// DB USER 접속
+		// DB USER
 		try {
 			conn = DriverManager.getConnection(URL, ID, PW);
-
 			stmt = conn.createStatement();
-
 			rs = stmt.executeQuery(query);
 
 			String subNo = null;
@@ -57,6 +53,7 @@ public class GetDBToMakeFile {
 
 			while (rs.next()) {
 				subNo = rs.getString(1);
+				//SUBNO = rs.getString("SUBNO");
 				stuNo = rs.getString(2);
 				enrGrade = rs.getString(3);	
 				set = subNo + " " + stuNo + " " + enrGrade + "\r\n";
@@ -69,20 +66,12 @@ public class GetDBToMakeFile {
 					e.printStackTrace();
 				}
 			}
-			
-			try {
-				fos.close();
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-		} catch (SQLException e) {
-			e.printStackTrace();
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
+			try {fos.close();} 
+			catch (IOException e) {e.printStackTrace();}
+		} catch (SQLException e) {e.printStackTrace();
+		} catch (FileNotFoundException e) {e.printStackTrace();
 		} finally {
 			try {
-				
 				rs.close();
 				stmt.close();
 				conn.close();
@@ -90,7 +79,5 @@ public class GetDBToMakeFile {
 				e.printStackTrace();
 			}
 		} // 2try end
-
 	}// main end
-
 }
