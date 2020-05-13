@@ -13,7 +13,7 @@ public class ClientExample {
 			socket = new Socket();
 			System.out.println("Connection Request");
 
-			socket.connect(new InetSocketAddress("localhost", 5001));
+			socket.connect(new InetSocketAddress("192.168.0.139", 5001));
 			System.out.println("Connection Success");
 
 			byte[] bytes = null;

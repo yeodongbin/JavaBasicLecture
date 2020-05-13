@@ -9,7 +9,7 @@ public class UtilExample {
 		System.out.println(age);
 
 		ChildPair<String, Integer> childPair = new ChildPair<>("È«»ï¿ø", 20);
-		Integer childAge = Util.getValue(childPair, "È«»ï¼ø");
+		Integer childAge = Util.getValue(  childPair, "È«»ï¼ø");
 		System.out.println(childAge);
 
 		

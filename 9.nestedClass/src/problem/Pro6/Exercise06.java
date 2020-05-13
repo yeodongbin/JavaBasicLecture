@@ -35,4 +35,4 @@ class Chat {
 
 	void sendMessage(String message) {
 	};
-}}
+}
