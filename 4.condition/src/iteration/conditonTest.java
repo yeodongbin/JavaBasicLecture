@@ -1,4 +1,4 @@
-package condition;
+package iteration;
 
 public class conditonTest {
 

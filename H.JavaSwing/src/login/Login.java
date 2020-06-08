@@ -16,18 +16,20 @@ import javax.swing.JPanel;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
-
-
 public class Login extends JFrame {
 
 	public Login() {
 		JPanel panel = new JPanel();
+		JPanel panel2 = new JPanel();
 		JLabel label = new JLabel("ID : ");
 		JLabel pswrd = new JLabel("Password : ");
 		JPasswordField textPW = new JPasswordField(10);
 		JTextField textID = new JTextField(10);
 		JButton logBtn = new JButton("Log In");
-		ImagePanel imagePanel = new ImagePanel(new ImageIcon("./image/bird.jpg").getImage());
+//		ImagePanel imagePanel = new ImagePanel(new ImageIcon("./image/bird.jpg").getImage());
+//		panel2.add(imagePanel);
+// 		add(imagePanel);
+// 		pack();
 
 		panel.add(label);
 		panel.add(textID);
@@ -49,8 +51,7 @@ public class Login extends JFrame {
 		});
 
 		add(panel);
-		// add(imagePanel);
-		// pack();
+
 		setVisible(true);
 		setSize(600, 400);
 		setLocationRelativeTo(null);

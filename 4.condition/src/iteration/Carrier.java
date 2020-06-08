@@ -27,7 +27,7 @@
 //예제 출력 2 
 //-1
 
-package condition;
+package iteration;
 
 import java.util.Scanner;
 
