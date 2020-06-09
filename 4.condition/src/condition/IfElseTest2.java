@@ -1,6 +1,7 @@
 package condition;
 public class IfElseTest2 
 {
+	//4사분면 문제도 출제할것
 	public static void main(String[] args) 
 	{
 		//1 2 3 4 5, 13남자 24여자 5외국인.
