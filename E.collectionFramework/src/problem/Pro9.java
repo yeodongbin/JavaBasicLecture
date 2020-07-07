@@ -37,6 +37,17 @@ public class Pro9 {
 //			System.out.println(a);
 //		}
 //		maxScore = ary[ary.length - 1];
+		
+//		Set<Map.Entry<String, Integer>> entries = map.entrySet();
+//		for (Map.Entry<String, Integer> entry : entries) {
+//			if (maxScore< entry.getValue()) {
+//				maxScore = entry.getValue();
+//				name = entry.getKey();
+//			}
+//			totalScore += entry.getValue();
+//		}
+		
+		
 
 		System.out.println("Avg : " + (totalScore / ary.length));
 		System.out.println("Max : " + maxScore);

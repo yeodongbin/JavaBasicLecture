@@ -1,4 +1,4 @@
-package accessmodifier.tv;
+package access_modifier;
 
 public class TV {
 	private boolean power = false;
