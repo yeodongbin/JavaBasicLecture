@@ -28,7 +28,5 @@ public class ArrayNumberBox {
 			}
 			System.out.println();
 		}
-
 	}
-
 }

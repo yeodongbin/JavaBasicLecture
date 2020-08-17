@@ -30,7 +30,7 @@ public class ImagePanel extends JPanel {
 		ImagePanel panel = new ImagePanel(new ImageIcon("./images/uni.jpg").getImage());
 		frame.add(panel);
 		frame.setPreferredSize(new Dimension(650, 400));
-	    frame.pack();
+	    //frame.pack();
 
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
