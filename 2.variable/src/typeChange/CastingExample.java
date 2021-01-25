@@ -28,7 +28,7 @@ public class CastingExample {
 		double num4 = num2;
 		num2 = (int) num4;
 		
-		int result = num1 - num2;
+		result = num1 - num2;
 		System.out.println(result);
 
 		//OperationsPromotionExample ================================================
@@ -55,7 +55,7 @@ public class CastingExample {
 
 		int intValue5 = 10;
 		// int intValue6 = 10 / 4.0; //������ ����
-		double doubleValue = intValue5 / 4.0;
+		doubleValue = intValue5 / 4.0;
 		System.out.println(doubleValue);
 	}
 }

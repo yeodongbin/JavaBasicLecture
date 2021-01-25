@@ -1,4 +1,4 @@
-package accessmodifier.tv;
+package access_modifier;
 
 public class TVExample {
 
@@ -10,9 +10,6 @@ public class TVExample {
 		tv.check();
 		tv.setMute();
 		tv.check();
-		
-		
-
 	}
 
 }

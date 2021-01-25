@@ -3,34 +3,34 @@ package condition;
 public class IDcodeCheck {
 
 	public static void main(String[] args) {
-		int code = 31; //≥≤º∫ ≥ª±π¿Œ
+		int code = 31; 
 		String idCheck = "";
 		
-		if (code / 10 == 1) {// ø©º∫
-			idCheck = "ø©º∫";
-			if (code % 10 == 1) { // ≥ª±π¿Œ
-				idCheck = idCheck + ", ≥ª±π¿Œ";
-			} else if (code % 10 == 2) { // ø‹±π¿Œ
-				idCheck = idCheck + ", ø‹±π¿Œ";
-			} else if (code % 10 == 3) { // πÃº∫≥‚¿⁄
-				idCheck = idCheck + ", πÃº∫≥‚¿⁄";
+		if (code / 10 == 1) {
+			idCheck = "ÎÇ®Ïûê";
+			if (code % 10 == 1) {
+				idCheck = idCheck + ", Í¥ÄÎ¶¨Ïûê";
+			} else if (code % 10 == 2) { 
+				idCheck = idCheck + ", ÏÇ¨Ïö©Ïûê";
+			} else if (code % 10 == 3) { 
+				idCheck = idCheck + ", Íµ¨Í≤ΩÍæº";
 			} else {
-				idCheck = "¡§»Æ«— ¡§∫∏∏¶ ¿‘∑¬«œººø‰.";
+				idCheck = "ERROR !!!!";
 			}
 		}
-		if (code / 10 == 2) {// ≥≤º∫
-			idCheck = "≥≤º∫";
-			if (code % 10 == 1) { // ≥ª±π¿Œ
-				idCheck = idCheck + ", ≥ª±π¿Œ";
-			} else if (code % 10 == 2) { // ø‹±π¿Œ
-				idCheck = idCheck + ", ø‹±π¿Œ";
-			} else if (code % 10 == 3) { // πÃº∫≥‚¿⁄
-				idCheck = idCheck + ", πÃº∫≥‚¿⁄";
+		if (code / 10 == 2) {
+			idCheck = "Ïó¨Ïûê";
+			if (code % 10 == 1) { 
+				idCheck = idCheck + ", Í¥ÄÎ¶¨Ïûê";
+			} else if (code % 10 == 2) { 
+				idCheck = idCheck + ", ÏÇ¨Ïö©Ïûê";
+			} else if (code % 10 == 3) { 
+				idCheck = idCheck + ", Íµ¨Í≤ΩÍæº";
 			} else {
-				idCheck = "¡§»Æ«— ¡§∫∏∏¶ ¿‘∑¬«œººø‰.";
+				idCheck = "ERROR !!!!";
 			}
 		} else {
-			idCheck = "¡§»Æ«— ¡§∫∏∏¶ ¿‘∑¬«œººø‰.";
+			idCheck = "ERROR !!!!";
 		}
 		
 		System.out.println(idCheck);

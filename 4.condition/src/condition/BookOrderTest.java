@@ -9,7 +9,6 @@ public class BookOrderTest {
 		int totalPrice = javaPrice + jqueryPrice + oraclePrice + springPrice;
 		int dcPrice = (int)(totalPrice * (1- 0.15));
 
-		
 		System.out.println("JAVA : " + javaPrice );
 		System.out.println("jQuery : " + jqueryPrice);
 		System.out.println("Oracle : " + oraclePrice);
