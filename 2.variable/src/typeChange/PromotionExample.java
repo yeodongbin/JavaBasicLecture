@@ -6,9 +6,9 @@ public class PromotionExample {
 		int intValue = byteValue;
 		System.out.println(intValue);
 
-		char charValue = '가';
+		char charValue = 'A';
 		intValue = charValue;
-		System.out.println("가의 유니코드=" + intValue);
+		System.out.println("A = " + intValue);
 
 		intValue = 500;
 		long longValue = intValue;

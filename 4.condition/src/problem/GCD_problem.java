@@ -7,8 +7,8 @@ public class GCD_problem {
 		Scanner sc = new Scanner(System.in);
 		int num1 = sc.nextInt();
 		int num2 = sc.nextInt();
-		int g = 0;// ÃÖ´ë°ø¾à¼ö
-		int l = 0;// ÃÖ¼Ò°ø¹è¼ö
+		int g = 0;
+		int l = 0;
 
 		int minValue = (num1 < num2) ? num1 : num2;
 		int maxValue = (num1 > num2) ? num1 : num2;
@@ -28,8 +28,8 @@ public class GCD_problem {
 			}
 		}
 		
-		System.out.println("ÃÖ¼Ò°ø¹è¼ö : " + l);
-		System.out.println("ÃÖ´ë°ø¾à¼ö : " + g);
+		System.out.println("ï¿½Ö¼Ò°ï¿½ï¿½ï¿½ï¿½ : " + l);
+		System.out.println("ï¿½Ö´ï¿½ï¿½ï¿½ï¿½ï¿½ : " + g);
 
 	}
 }
