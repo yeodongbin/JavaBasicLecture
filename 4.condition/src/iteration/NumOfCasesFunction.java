@@ -15,6 +15,7 @@ public class NumOfCasesFunction {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("n> ");
 		int n = sc.nextInt();
+		
 		System.out.print("r> ");
 		int r = sc.nextInt();
 

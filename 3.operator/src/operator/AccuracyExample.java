@@ -13,6 +13,7 @@ public class AccuracyExample {
 		int totalPieces = apple *10;
 		int temp = totalPieces - number;
 		
+		System.out.println(temp);
 		System.out.println(result);
 	}
 
