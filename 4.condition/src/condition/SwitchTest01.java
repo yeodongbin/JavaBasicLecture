@@ -4,16 +4,16 @@ public class SwitchTest01 {
 		int x = 8;
 		
 		switch(x) {
-			case 10 : System.out.println("10ÀÔ´Ï´Ù.");break;
-			case 9 : System.out.println("9ÀÔ´Ï´Ù.");break;
-			case 8 : System.out.println("8ÀÔ´Ï´Ù.");break;
-			case 7 : System.out.println("7ÀÔ´Ï´Ù.");
+			case 10 : System.out.println("10.");break;
+			case 9 : System.out.println("9");break;
+			case 8 : System.out.println("8");break;
+			case 7 : System.out.println("7");
 		}
 
 		switch(x) {
-			case 9 : case 8 : case 7 : case 6 : System.out.println("5º¸´Ù Å®´Ï´Ù.");break;
-			default : System.out.println("5º¸´Ù ÀÛ½À´Ï´Ù.");
+			case 9 : case 8 : case 7 : case 6 : System.out.println("5ï¿½ï¿½ï¿½ï¿½ Å®ï¿½Ï´ï¿½.");break;
+			default : System.out.println("5ï¿½ï¿½ï¿½ï¿½ ï¿½Û½ï¿½ï¿½Ï´ï¿½.");
 		}
-		System.out.println("ÇÁ·Î±×·¥ Á¾·á!!!!");
+		System.out.println("ï¿½ï¿½ï¿½Î±×·ï¿½ ï¿½ï¿½ï¿½ï¿½!!!!");
 	}
 }

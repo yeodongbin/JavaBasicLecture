@@ -3,18 +3,18 @@ public class SwitchTest02 {
 	public static void main(String[] args) {
 		char ch = 'c';
 		switch(ch) {
-			case 97 : System.out.println("a입니다.");break;
-			case 98 : System.out.println("b입니다.");break;
-			case 99 : System.out.println("c입니다.");break;
-			default : System.out.println("a b c가 아닙니다.");
+			case 97 : System.out.println("a.");break;
+			case 98 : System.out.println("b");break;
+			case 99 : System.out.println("c");break;
+			default : System.out.println("a b c");
 		}
 
 		String s = "java";
 		switch(s) {
-			case "hello" : System.out.println("hello입니다.");break;
-			case "java" : System.out.println("java입니다.");break;
-			case "!!!" : System.out.println("!!!!입니다.");break;
-			default : System.out.println("전부 아닙니다.");
+			case "hello" : System.out.println("hello.");break;
+			case "java" : System.out.println("java.");break;
+			case "!!!" : System.out.println("!!!!.");break;
+			default : System.out.println("default");
 		}
 	}
 }

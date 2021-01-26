@@ -1,26 +1,43 @@
 package iteration;
+
 public class For1 {
 	public static void main(String[] args) {
-		System.out.println("1 - 10±îÁö Ãâ·ÂÇÏ½Ã¿À.");//1 2 3 4 .. 10
-		for(int i=1;i<11;i++) {
-			System.out.print(i + "\t");
-		}
-		
-		//System.out.println();
-		//System.out.print("\n");
-		System.out.println("\n0 - 10±îÁöÀÇ Â¦¼ö Ãâ·ÂÇÏ½Ã¿À.");//0 2 4 6 8 10
-		for(int i=0;i<11;i++) {
-			if(i % 2 == 0) {
-				System.out.print(i + "\t");
+		// for (ì´ˆê¸°ê°’;ì¡°ê±´ì‹;ì¦ê°ì‹) {ì‹¤í–‰ë¬¸}
+		int sum = 0;
+		for (int i = 1; i < 11; i++) {
+			if (i % 2 == 0) { // ì§ìˆ˜
+				System.out.print(i + " ");
+				sum = sum + i;
 			}
 		}
-		System.out.print("\n------------------------------\n");
-		for(int i=0;i<11;i+=2) {
+		System.out.println("-> even : " + sum);
+
+		sum = 0;
+		for (int i = 1; i < 11; i++) {
+			if (i % 2 == 1) { // í™€ìˆ˜
+				System.out.print(i + " ");
+				sum += i;
+			}
+		}
+		System.out.println(" -> odd  : " + sum);
+
+		for (int i = 1; i < 11; i++) {
+			if (i % 3 == 0) { // 3ì˜ë°°ìˆ˜
+				System.out.print(i + " ");
+			}
+		}
+		System.out.println();
+
+		for (int i = 10; i > 0; i--) {
 			System.out.print(i + "\t");
 		}
-		System.out.println("\n1 - 10±îÁöÀÇ ¼ö¸¦ °Å²Ù·Î Ãâ·ÂÇÏ½Ã¿À.");//10 9 8 7 ... 2 1
-		for(int i=10;i>0;i--) {
-			System.out.print(i + "\t");
-		}
+		System.out.println();
+
+//		for (;;) {
+//			System.out.println("!!!!!!");
+//		}
+
+		System.out.println("\ní”„ë¡œê·¸ëž¨ ì¢…ë£Œ\n");
+
 	}
 }

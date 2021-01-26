@@ -1,4 +1,4 @@
-package condition;
+package problem;
 /*
 가위 : 0, 바위 : 1, 보 : 2
 출력 >>> 나 : 바위  컴 : 가위 결과 : 이겼다. 

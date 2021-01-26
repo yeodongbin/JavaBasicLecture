@@ -3,7 +3,7 @@ package problem;
 public class Ex03 {
 
 	public static void main(String[] args) {
-		  //3ÀÇ ¹è¼öÀÇ ÇÕ
+		  //3ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½
 	      int sum =0;
 	      int i =0;
 	      
@@ -12,7 +12,7 @@ public class Ex03 {
 	            sum=sum+i;
 	         }            
 	      }
-	      System.out.println("3ÀÇ ¹è¼öÀÇ ÇÕ:"+sum);
+	      System.out.println("3 X : "+sum);
 	}
 	
 	

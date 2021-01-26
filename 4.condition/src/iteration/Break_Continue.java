@@ -1,20 +1,18 @@
-package condition;
+package iteration;
 public class Break_Continue {
 	public static void main(String[] args) {
-		while(true) {		
-			int num = (int)(Math.random() * 10);
-
-			if(num ==0) {
-				System.out.println("!!");
-				break;
-			}
-
-			if(num == 4) {
-				System.out.println("4!! : " + num);
+		for (int i = 0; i < 101 ; i++) {
+			if (i == 5) {
+				System.out.print("continue!! ");
 				continue;
 			}
-
-			System.out.println(" : " + 10/num);
+			
+			System.out.print(i + " ");
+			
+			if (i == 10) {
+				System.out.print("break!");
+				break;
+			}
 		}
 	}
 }
