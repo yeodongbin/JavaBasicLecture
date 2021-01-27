@@ -1,6 +1,6 @@
 package arrayExample;
 
-public class ArrayBubbleSort {
+public class ArrayExample03BubbleSort {
 
 	public static void main(String[] args) {
 		int[] arr = {10,5,9,1,8};

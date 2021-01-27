@@ -1,10 +1,10 @@
 package arrayExample;
 
-public class AdvancedForExample {
+public class ArrayExample02AdvancedFor {
 
 	public static void main(String[] args) {
 		
-//		for (임시 변수:[배열]) {
+//		for () {
 //			
 //		}
 		

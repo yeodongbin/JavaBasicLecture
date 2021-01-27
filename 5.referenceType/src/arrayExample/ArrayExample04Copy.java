@@ -1,6 +1,6 @@
 package arrayExample;
 
-public class ArrayCopyExample {
+public class ArrayExample04Copy {
 
 	public static void main(String[] args) {
 		int[] oldIntArr = { 1, 2, 3 };

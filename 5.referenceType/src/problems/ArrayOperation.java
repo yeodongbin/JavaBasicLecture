@@ -7,35 +7,33 @@ public class ArrayOperation {
 	public static void main(String[] args) {
 		   Scanner scan = new Scanner(System.in);
 	        
-	        System.out.println("Ã¹¹øÂ° Çà·Ä Å©±â ÀÔ·Â");
+	        System.out.println("Ã¹ï¿½ï¿½Â° ï¿½ï¿½ï¿½ Å©ï¿½ï¿½ ï¿½Ô·ï¿½");
 	        int x = scan.nextInt();
 	        int y = scan.nextInt();
 	        
-	        System.out.println("µÎ¹øÂ° Çà·Ä Å©±â ÀÔ·Â");
+	        System.out.println("ï¿½Î¹ï¿½Â° ï¿½ï¿½ï¿½ Å©ï¿½ï¿½ ï¿½Ô·ï¿½");
 	        int x2 = scan.nextInt();
 	        int y2 = scan.nextInt();
 	        
 	        int[][] arr = new int[x][y];
 	        int[][] arr2 = new int[x2][y2];
-	        
 	        int[][] arr3 = new int[x][y2];
 	        
 	        
-	        System.out.println("Ã¹¹øÂ° Çà·Ä °ª ÀÔ·Â");
+	        System.out.println("Ã¹ï¿½ï¿½Â° ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ô·ï¿½");
 	        for(int i=0; i<x; i++){
 	            for(int j=0; j<y; j++){
 	                arr[i][j] = scan.nextInt();
 	            }
 	        }
 	        
-	        System.out.println("µÎ¹øÂ° Çà·Ä °ª ÀÔ·Â");
+	        System.out.println("ï¿½Î¹ï¿½Â° ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ô·ï¿½");
 	        for(int i=0; i<x2; i++){
 	            for(int j=0; j<y2; j++){
 	                arr2[i][j] = scan.nextInt();
 	            }
 	        }
 	        
-	        //Çà·Ä°ö¼À
 	        for(int i=0; i<x; i++){
 	            for(int j=0; j<y2; j++){
 	                int sum = 0;
@@ -46,9 +44,7 @@ public class ArrayOperation {
 	            }            
 	        }
 	        
-	        
-	        
-	        //Ãâ·Â
+	       
 	        for(int i=0; i<x; i++){
 	            for(int j=0; j<y2; j++){
 	                System.out.print(arr3[i][j] + " ");

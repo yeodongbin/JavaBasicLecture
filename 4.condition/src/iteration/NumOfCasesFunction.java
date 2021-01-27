@@ -29,8 +29,8 @@ public class NumOfCasesFunction {
 		facR = factorial(r);
 		facNminR = factorial(n - r);
 
-		P = facN / facNminR;// 순열공식
-		C = P / facR; // 조합공식
+		P = facN / facNminR;
+		C = P / facR;
 
 		System.out.println(NumOfCase);
 		System.out.println(P);

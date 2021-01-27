@@ -17,13 +17,13 @@ public class Star {
 			System.out.println();
 		}
 
-		/*
-		 		 *
-		 		**
-			   ***
-			  ****
-			 *****		
-		*/
+/*
+ 		 *
+ 		**
+	   ***
+	  ****
+	 *****		
+*/
 
 		for (int i = 1; i < 6; i++) {
 			for (int j = (5 - i); j > 0; j--) {

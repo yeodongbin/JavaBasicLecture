@@ -1,6 +1,6 @@
 package arrayExample;
 
-public class Array {
+public class ArrayExample05Function {
 	public static void main(String[] args) {
 		int[] scores;
 		scores = new int[] { 83, 90, 87 };

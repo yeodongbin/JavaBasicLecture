@@ -1,16 +1,14 @@
 package iteration;
 public class WhileTest {
 	public static void main(String[] args) {
-		System.out.println("1 - 10±îÁö Ãâ·Â(while)");
+		//while (ì¡°ê±´ì‹) {ì‹¤í–‰ë¬¸}
 		int x = 1;
 		while(x < 11) {
 			System.out.print(x++ + "\t");
 		}
-
-		System.out.println("\n\n**** ±¸±¸´Ü(while) *****");
 		int dan = 2;
 		while(dan < 10) {
-			//System.out.println("¿©±âµé¾î¿À³ª???");
+			
 			int i = 1;
 			while(i < 10) {
 				System.out.print(dan + " * " + i + " = " + dan * i + "\t");

@@ -1,42 +1,50 @@
 package arrayExample;
 
-public class ArrayExample {
+public class ArrayExample01 {
 
 	public static void main(String[] args) {
-		int[] arrInt1 = null;
+		int[] arrInt = {90, 80, 70};
 		int arrInt2[] = {90, 80, 70};
-		int[] arrInt3 = null;
-		double[] arrDou;
-		String[] arrStr;
+		//arrInt[0] = 90
+		//arrInt[1] = 80
+		//arrInt[2] = 70
+		System.out.println("arrInt Length : " + arrInt.length);
 		
-		//System.out.println(arrInt1);
-		
-		arrInt1 = new int[3];// Int Int Int
-		arrInt1[0] = 90;
-		arrInt1[1] = 80;
-		arrInt1[2] = 70;
-		
-		//arrInt3 = {90,80,70};//X
-		
-		for (int i = 0; i<3; i++) {
-			//System.out.println(arrInt1[i]);
+		for (int i = 0; i<arrInt.length; i++) {
+			System.out.println(arrInt[i]);
 		}
 		
-		int in = 0;
-		System.out.println(in);
+		arrInt[0] = 65;
+		arrInt[1] = 75;
+		arrInt[2] = 85;
 		
-		int[] arrInt4 = new int[3];//초기화 기본
+		int sum = 0;
+		for (int i = 0; i<arrInt.length; i++) {
+			sum += arrInt[i];
+			System.out.println(arrInt[i]);
+		}
 		
+		System.out.println("sum : " + sum); 
+		System.out.println("avg : " + (sum/arrInt.length));
+		
+		//==================================================
+		
+		int[] arrInt3;
+		
+		arrInt3 = new int[3];//Heap => |int|int|int|
+		arrInt3[0] = 10;
+		arrInt3[1] = 20;
+		arrInt3[2] = 30;
+		
+		int[] arrInt4 = new int[4];//Heap => |null|null|null|null|
 		System.out.println(arrInt4[0]);
 		
+		//==================================================
 		
-		
-		
-		
-		
-		
-		
-		
+		String[] arrStr = {"hi","hello","world"};
+		for (int i =0 ;i<arrStr.length; i++) {
+			System.out.println(arrStr[i]);
+		}
 
 	}
 

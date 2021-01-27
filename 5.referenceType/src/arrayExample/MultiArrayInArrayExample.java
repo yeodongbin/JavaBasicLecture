@@ -1,6 +1,6 @@
 package arrayExample;
 
-public class ArrayInArrayExample {
+public class MultiArrayInArrayExample {
 	public static void main(String[] args) {
 
 		int[][] mathScores = new int[2][3];
