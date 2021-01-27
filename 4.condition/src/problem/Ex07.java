@@ -12,32 +12,32 @@ public class Ex07 {
 
 		while (run) {
 			System.out.println("----------------------");
-			System.out.println("1.¿¹±Ý|2.Ãâ±Ý|3.ÀÜ°í|4.Á¾·á");
+			System.out.println("1:in|2.out|3.check|4.end");
 			System.out.println("----------------------");
-			System.out.print("¼±ÅÃ>");
+			System.out.print("ï¿½ï¿½ï¿½ï¿½>");
 
 			Scanner sc = new Scanner(System.in);
 			keyCode = sc.nextInt();
 
 			if (keyCode == 1) {
-				System.out.print("¿¹±Ý¾×>");
+				System.out.print("in");
 				inValue = sc.nextInt();
 				balance = balance + inValue;
 			} else if (keyCode == 2) {
-				System.out.print("Ãâ±Ý¾×>");
+				System.out.print("out");
 				inValue = sc.nextInt();
 				if (balance - inValue >= 0)
 					balance = balance - inValue;
 				else
-					System.out.println("ÀÜ¾×ÀÌ ºÎÁ·ÇØ¿ä");
+					System.out.println("ï¿½Ü¾ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ø¿ï¿½");
 			} else if (keyCode == 3) {
-				System.out.println("ÀÜ°í>" + balance);
+				System.out.println("check>" + balance);
 			} else if (keyCode == 4) {
 				run = false;
 			}
 		}
 
-		System.out.println("ÇÁ·Î±×·¥ Á¾·á");
+		System.out.println("program end");
 	}
 
 }

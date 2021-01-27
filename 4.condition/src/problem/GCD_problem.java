@@ -5,6 +5,7 @@ import java.util.*;
 public class GCD_problem {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
+		
 		int num1 = sc.nextInt();
 		int num2 = sc.nextInt();
 		int g = 0;
@@ -28,8 +29,8 @@ public class GCD_problem {
 			}
 		}
 		
-		System.out.println("�ּҰ���� : " + l);
-		System.out.println("�ִ����� : " + g);
+		System.out.println("L : " + l);
+		System.out.println("G : " + g);
 
 	}
 }
