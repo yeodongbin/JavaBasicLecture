@@ -3,22 +3,25 @@ package arrayExample;
 public class ArrayExample03SelectSort {
 
 	public static void main(String[] args) {
-		int i, j, least, temp;
-		int[] list = new int[] { 2, 5, 6, 1 };
-		int arrLenght = list.length;
+		int[] arr = { 10, 5, 9, 1, 8 };
 
-
-		for (i = 0; i < arrLenght - 1; i++) {
-			least = i;
-			for (j = i + 1; j < arrLenght; j++) {
-				if (list[j] < list[least])
-
-					least = j;
+		for (int i = 0; i < arr.length; i++) {
+			int min_index = i;
+			for (int j = i + 1; j < arr.length; j++) {
+				if (arr[min_index] > arr[j]) {
+					min_index = j;
+				}
 			}
-
-			if (i != least) {
-				// swap(list[i], list[least]);
-			}
+			// swap
+			int temp = 0;
+			temp = arr[min_index];
+			arr[min_index] = arr[i];
+			arr[i] = temp;
 		}
+
+		for (int value : arr) {
+			System.out.print(value + " ");
+		}
+		System.out.println();
 	}
 }

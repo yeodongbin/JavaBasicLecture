@@ -1,27 +1,51 @@
 package method_call;
 
 public class Calculator {
-	//필드
-	//생성자
-	//메소드
+
+	int x, y;
+	
 	int plus(int x, int y) {
-		int result = x + y;
-		return result;
+		return x + y;
 	}
 	
 	double avg(int x, int y) {
-		double sum = plus(x, y);
-		double result = sum / 2;
-		return result;
+		int sum = plus(x,y);
+		double avg = sum / 2.0;
+		return avg;
 	}
 	
 	void execute() {
-		double result = avg(7, 10);
-		println("실행결과: " + result);
+		Calculator cal = new Calculator();
+		double result = avg(x,y);
+		System.out.println("Exectue : " + result);
 	}
 	
-	void println(String message) {
-		System.out.println(message);
-	}	
-}
+	void execute(int x) { //overload
+		Calculator cal = new Calculator();
+		double result = avg(x,y);
+		System.out.println("Exectue : " + result);
+	}
+	
+	Calculator() {
+		System.out.println("Calculator()");
+	}
+	
+	Calculator(int x) {
+		//this(x) //X
+		this.x = x;
+		System.out.println("Calculator(x)");
+	}
+	Calculator(int x, int y) {
+		//this.x = x;
+		this(x); //method(constructor) call
+		this.y = y;
+		System.out.println("Calculator(x, y)");
+		execute();//method call
+	}
+	
+	public static void main(String[] args) {
+		Calculator cal = new Calculator(7,10);
+		//cal.execute(); //O
+	}
 
+}

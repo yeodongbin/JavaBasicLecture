@@ -5,7 +5,7 @@ public class MultiArrayNumberBox {
 	public static void main(String[] args) {
 		int[][] numBox = new int[5][5];
 		int num = 1;
-		// 입력
+	
 		for (int i = 0; i < numBox.length; i++) {
 			if (i % 2 == 0) {
 				for (int j = 0; j < numBox[i].length; j++) {
@@ -20,7 +20,7 @@ public class MultiArrayNumberBox {
 			}
 		}
 
-		// 출력
+
 		for (int i = 0; i < numBox.length; i++) {
 			for (int j = 0; j < numBox[i].length; j++) {
 				System.out.print(numBox[i][j]);

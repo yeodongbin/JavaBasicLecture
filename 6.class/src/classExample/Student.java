@@ -1,13 +1,19 @@
 package classExample;
 
 public class Student {
-	String name = "minho";
-	
-	Student(String _name){ //1순위
-		name = _name;
+	// field
+	int stu_num;
+	String stu_name = "minho";
+
+	// constructor
+	Student(String _stu_name) {
+		stu_name = _stu_name;
+
 	}
-	
+
+	// method
 	void run() {
-		System.out.println(name + "는 달린다.");
+		System.out.println(stu_name + " is running!~~~~");
 	}
+
 }

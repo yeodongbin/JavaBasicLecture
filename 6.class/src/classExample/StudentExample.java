@@ -11,7 +11,10 @@ public class StudentExample {
 		minho.run();
 		tom.run();
 		jg.run();
-
+		
+//		Field f = new Field();
+//		String[] a;
+//		f.main(args);//가능
 	}
 
 }

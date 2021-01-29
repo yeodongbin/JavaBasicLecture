@@ -16,6 +16,8 @@ public class ArrayLotto {
 			}
 		}
 		
+		//================================================
+		
 		int[] number = new int[45];
 		for (int i = 0;i<number.length ;i++) {
 			number[i] = i+1; // 1 2 3 4 5 6 ... 45

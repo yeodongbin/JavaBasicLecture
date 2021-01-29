@@ -16,8 +16,7 @@ public class EnumConn {
 }// EnumConn
 
 enum DevType {
-
-	// 상수("연관시킬 문자") <- 이땐 줄 끝에 세미콜론 (;) 붙이기.
+	//Constant_Name("String" or Number), ...;
 	MOBILE(12345), WEB(1234), SERVER(123);
 
 	final private int name;
@@ -28,6 +27,4 @@ enum DevType {
 	public int getName() {
 		return name;
 	}
-
-
 } //enum

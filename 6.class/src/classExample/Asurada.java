@@ -2,90 +2,107 @@ package classExample;
 
 public class Asurada {
 	int gas = 200;
-	int maxSpeed = 200;
 	int curSpeed = 0;
-	String mode; // D(drive) R(back) B(booster) S(stop)
+	int maxSpeed = 300;
 	String master;
+	String mode; // D driver, R back, B boostar
 	boolean power;
 
-	Asurada() {
-		System.out.println("°í´ÏÂî¿Í ");
+	Asurada(String _master) {
+		master = _master;
+		System.out.println("ê³ ë‹ˆì°Œì™€ ~ " + master + "ìƒ");
 	}
 
-	Asurada(String master) {
-		this.master = master;
-		System.out.println("°í´ÏÂî¿Í " + this.master);
+	void powerOn() {
+		power = true;
+		System.out.println("ì‹œë™ì´ ì¼œì¡ŒìŠµë‹ˆë‹¤.");
+	}
+
+	void powerOff() {
+		if (power == true && curSpeed == 0) {
+			power = false;
+			System.out.println("ì‹œë™ì´ êº¼ì¡ŒìŠµë‹ˆë‹¤.");
+		} else {
+			System.out.println("ì‹œë™ì„ ëŒìˆ˜ ì—†ì–´ìš”!! í™•ì¸ë°”ëžŒ");
+		}
+
 	}
 
 	void transfer(String _mode) {
-		if (power) {
-			if ((mode == "D") && (_mode == "R")) {
-				System.out.println("¸ðµå º¯È¯ ¾ÈµÊ -> ÇöÀç D »óÅÂ");
-			} else if (mode == "R" && (_mode == "D" || _mode == "B")) {
-				System.out.println("¸ðµå º¯È¯ ¾ÈµÊ -> ÇöÀç R »óÅÂ");
-			} else {
+		switch (_mode) {
+		case "D":
+			if (curSpeed >= 0) {
 				mode = _mode;
+				break;
 			}
+		case "R":
+			if (curSpeed == 0) {
+				mode = _mode;
+				break;
+			}
+		case "N":
+			mode = _mode;
+			break;
+		case "B":
+			if (curSpeed >= 0) {
+				mode = _mode;
+				break;
+			}
+		case "P":
+			if (curSpeed == 0) {
+				mode = _mode;
+				break;
+			}
+		default:
+			System.out.println("ë³€ì†ê¸°ë¥¼ ì œì–´í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.");
 		}
+		System.out.println("Mode : " + mode);
+
 	}
 
-	void booster() { // 5ÃÊ ÃÖ°í ¼Óµµ gas -10
-		int tempSpeed;
+	void run() {
 		if (power) {
-			if (mode == "B" && gas >= 10) {
-				tempSpeed = curSpeed;
-				curSpeed = maxSpeed;
-				System.out.println("Booster On");
-
-				for (int i = 5; i > 0; i--) {
-					try {
-						System.out.println(i + "ÃÊ");
-						Thread.sleep(1000);
-					} catch (InterruptedException e) {
-						e.printStackTrace();
-					}
+			if (mode == "D" && gas >= 10) {
+				if (curSpeed <= (maxSpeed - 30)) {
+					curSpeed += 30;
+					gas -= 10;
+				} else {
+					curSpeed = maxSpeed;
+					gas -= 10;
 				}
-				
-				System.out.println("Booster Off");
-				curSpeed = tempSpeed;
-			}
-		}
-	}
-
-	void run() { // run() -> gas -5
-		if (power) {
-			if (mode == "D" && gas > 5) {
-				curSpeed += 10;
-				gas -= 5;
-			}
-		}
-	}
-
-	void stop() {
-		if (power && mode == "S") {
-			if (curSpeed <= 20) {
-				curSpeed = 0;
+			} else if (mode == "B" && gas >= 50) {
+				booster(curSpeed);
+			} else if (mode == "R" && gas >= 10) {
+				curSpeed = -10;
+				gas -= 10;
 			} else {
-				curSpeed = curSpeed - 20;
+				System.out.println("ë‹¬ë¦´ ìˆ˜ ì—†ìŠµë‹ˆë‹¤.!!");
 			}
 		}
 	}
 
-	void PowerOn(String key) {
-		if (key.equals(master)) {
-			power = true;
-			System.out.println(master + "´Ô ½Ãµ¿ÇÏ¿´½À´Ï´Ù.");
-		} else {
-			System.out.println("Á¢±Ù ±ÇÇÑÀÌ ¾ø½À´Ï´Ù.");
+	void booster(int _curSpeed) {
+		curSpeed = maxSpeed;
+		gas -= 50;
+
+		int sec = 5;
+		while (sec > 0) {
+			System.out.println("BOOSTER ON! : " + curSpeed + " - "+ sec + " Sec");
+			sec--;
+			try {
+				Thread.sleep(1000);
+			} catch (Exception e) {
+			}
+			;
 		}
+		curSpeed = _curSpeed;
 	}
 
-	void PowerOff(String key) {
-		if (key.equals(master)) {
-			power = false;
-			System.out.println(master + "´Ô ½Ãµ¿À» Á¾·áÇÏ¿´½À´Ï´Ù.");
-		} else {
-			System.out.println("Á¢±Ù ±ÇÇÑÀÌ ¾ø½À´Ï´Ù.");
-		}
+	void check() {
+		System.out.println("Current Speed : " + curSpeed);
+		System.out.println("Gas Level : " + gas);
+		System.out.println("Power check : " + power);
+		System.out.println();
 	}
+
 }

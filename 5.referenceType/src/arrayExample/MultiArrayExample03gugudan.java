@@ -1,6 +1,6 @@
 package arrayExample;
 
-public class MultiArray {
+public class MultiArrayExample03gugudan {
 	public static void main(String[] args) {
 		int[][] gugudan0 = { 
 				{ 9, 1, 9 }, 

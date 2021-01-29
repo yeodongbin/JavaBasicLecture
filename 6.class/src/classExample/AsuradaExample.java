@@ -4,21 +4,21 @@ public class AsuradaExample {
 
 	public static void main(String[] args) {
 		Asurada asurada = new Asurada("yeo");
-		asurada.PowerOn("yeo");
+		asurada.powerOn();
 		asurada.transfer("D");
 		asurada.run();
-		System.out.println("ÇöÀç¼Óµµ :"+asurada.curSpeed);
+		System.out.println("ï¿½ï¿½ï¿½ï¿½Óµï¿½ :"+asurada.curSpeed);
 		asurada.run();
 		asurada.run();
-		System.out.println("ÇöÀç¼Óµµ :"+asurada.curSpeed);
+		System.out.println("ï¿½ï¿½ï¿½ï¿½Óµï¿½ :"+asurada.curSpeed);
 		asurada.transfer("D");
 		asurada.run();
 		asurada.run();
 		asurada.run();
 		asurada.run();
-		System.out.println("ÇöÀç¼Óµµ :"+asurada.curSpeed);
+		System.out.println("ï¿½ï¿½ï¿½ï¿½Óµï¿½ :"+asurada.curSpeed);
 		asurada.transfer("B");
-		asurada.booster();
+		
 		
 //		asurada.PowerOff("yeo");		
 //		Asurada enemy = new Asurada("aoi");

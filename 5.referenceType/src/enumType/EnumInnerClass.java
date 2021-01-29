@@ -12,12 +12,12 @@ public class EnumInnerClass {
 	public static void main(String[] args) {
 		EnumInnerClass developer = new EnumInnerClass();
 
-		developer.name = "홍길동";
+		developer.name = "YEO";
 		developer.career = 3;
 		developer.type = DevType.WEB;
 
-		System.out.println("개발자 이름 : " + developer.name);
-		System.out.println("개발자 경력 : " + developer.career);
-		System.out.println("직무파트     : " + developer.type);
+		System.out.println("name : " + developer.name);
+		System.out.println("career : " + developer.career);
+		System.out.println("type   : " + developer.type);
 	}
 }

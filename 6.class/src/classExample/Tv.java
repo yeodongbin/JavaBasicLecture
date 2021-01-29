@@ -1,20 +1,20 @@
 //class : TV
-//¼Ó ¼º : Á¦Á¶»ç    String maker
-//        È­¸éÅ©±â  int screenSize
-//        Ã¤³Î      int chanel
-//        º¼·ý      int volume
-//        Àü¿ø      boolean power
+//ï¿½ï¿½ ï¿½ï¿½ : ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½    String maker
+//        È­ï¿½ï¿½Å©ï¿½ï¿½  int screenSize
+//        Ã¤ï¿½ï¿½      int chanel
+//        ï¿½ï¿½ï¿½ï¿½      int volume
+//        ï¿½ï¿½ï¿½ï¿½      boolean power
 //
-//±â ´É : ÄÑ±â      void powerOn()
-//        ²ô±â      void powerOff() >>>>> power(boolean power)
-//        ÇÑÃ¤³ÎÀ§  int chanelUp()
-//        ÇÑÃ¤³Î¾Æ·¡int chanelDown()
-//        Ã¤³Îº¯°æ  int changeChanel(int chanel)
-//        º¼·ý¾÷    void volumeUp()
-//        º¼·ý´Ù¿î  void volumeDown()
-//        À½¼Ò°Å    void mute()
+//ï¿½ï¿½ ï¿½ï¿½ : ï¿½Ñ±ï¿½      void powerOn()
+//        ï¿½ï¿½ï¿½ï¿½      void powerOff() >>>>> power(boolean power)
+//        ï¿½ï¿½Ã¤ï¿½ï¿½ï¿½ï¿½  int chanelUp()
+//        ï¿½ï¿½Ã¤ï¿½Î¾Æ·ï¿½int chanelDown()
+//        Ã¤ï¿½Îºï¿½ï¿½ï¿½  int changeChanel(int chanel)
+//        ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½    void volumeUp()
+//        ï¿½ï¿½ï¿½ï¿½ï¿½Ù¿ï¿½  void volumeDown()
+//        ï¿½ï¿½ï¿½Ò°ï¿½    void mute()
 
-package problem;
+package classExample;
 
 public class Tv {
 	String maker;
@@ -25,7 +25,7 @@ public class Tv {
 	int maxVolume = 50;
 	int minVolume = 0;
 	boolean power;
-	boolean mute = false; // À½¼Ò°Å ¾Æ´Ñ »óÅÂ
+	boolean mute = false; // ï¿½ï¿½ï¿½Ò°ï¿½ ï¿½Æ´ï¿½ ï¿½ï¿½ï¿½ï¿½
 	String OnOff;
 
 	void powerOn() {
@@ -42,15 +42,15 @@ public class Tv {
 		if (power) {
 			if (curVolume < 50 && curVolume >= 0) {
 				curVolume += 1;
-				System.out.println("º¼·ý¾÷!!");
-				System.out.println("ÇöÀçº¼·ý:" + curVolume);
+				System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½!!");
+				System.out.println("ï¿½ï¿½ï¿½çº¼ï¿½ï¿½:" + curVolume);
 			} else if (curVolume == 0) {//
-				System.out.println("ÃÖ¼Òº¼·ýÀÔ´Ï´Ù.");
-				System.out.println("ÇöÀçº¼·ý:" + curVolume);
+				System.out.println("ï¿½Ö¼Òºï¿½ï¿½ï¿½ï¿½Ô´Ï´ï¿½.");
+				System.out.println("ï¿½ï¿½ï¿½çº¼ï¿½ï¿½:" + curVolume);
 
 			} else if (curVolume == 50) {
-				System.out.println("ÃÖ´ëº¼·ýÀÔ´Ï´Ù.");
-				System.out.println("ÇöÀçº¼·ý:" + curVolume);
+				System.out.println("ï¿½Ö´ëº¼ï¿½ï¿½ï¿½Ô´Ï´ï¿½.");
+				System.out.println("ï¿½ï¿½ï¿½çº¼ï¿½ï¿½:" + curVolume);
 
 			}
 		}
@@ -60,15 +60,15 @@ public class Tv {
 		if (power) {
 			if (curVolume < 50 && curVolume >= 0) {
 				curVolume -= 1;
-				System.out.println("º¼·ý´Ù¿î!!");
-				System.out.println("ÇöÀçº¼·ý:" + curVolume);
+				System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½Ù¿ï¿½!!");
+				System.out.println("ï¿½ï¿½ï¿½çº¼ï¿½ï¿½:" + curVolume);
 			} else if (curVolume == 0) {
-				System.out.println("ÃÖ¼Òº¼·ýÀÔ´Ï´Ù.");
-				System.out.println("ÇöÀçº¼·ý:" + curVolume);
+				System.out.println("ï¿½Ö¼Òºï¿½ï¿½ï¿½ï¿½Ô´Ï´ï¿½.");
+				System.out.println("ï¿½ï¿½ï¿½çº¼ï¿½ï¿½:" + curVolume);
 
 			} else if (curVolume == 50) {//
-				System.out.println("ÃÖ´ëº¼·ýÀÔ´Ï´Ù.");
-				System.out.println("ÇöÀçº¼·ý:" + curVolume);
+				System.out.println("ï¿½Ö´ëº¼ï¿½ï¿½ï¿½Ô´Ï´ï¿½.");
+				System.out.println("ï¿½ï¿½ï¿½çº¼ï¿½ï¿½:" + curVolume);
 
 			}
 		}
@@ -76,16 +76,16 @@ public class Tv {
 
 	void mute() {
 		if (power) {
-			if (mute == true) {// À½¼Ò°Å
+			if (mute == true) {// ï¿½ï¿½ï¿½Ò°ï¿½
 				curVolume = tempVolume;
 				mute = false;
-				System.out.println("À½¼Ò°Å ÇØÁ¦");
-				System.out.println("ÇöÀçÀ½·®:" + curVolume);
-			} else if (mute == false) { // À½¼Ò°Å ¾Æ´Ñ »óÅÂ
+				System.out.println("ï¿½ï¿½ï¿½Ò°ï¿½ ï¿½ï¿½ï¿½ï¿½");
+				System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½:" + curVolume);
+			} else if (mute == false) { // ï¿½ï¿½ï¿½Ò°ï¿½ ï¿½Æ´ï¿½ ï¿½ï¿½ï¿½ï¿½
 				tempVolume = curVolume;
 				mute = true;
-				System.out.println("À½¼Ò°Å");
-				System.out.println("ÇöÀçÀ½·®:" + curVolume);
+				System.out.println("ï¿½ï¿½ï¿½Ò°ï¿½");
+				System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½:" + curVolume);
 			}
 		}
 	}
@@ -94,7 +94,7 @@ public class Tv {
 		int result = 0;
 		if (power) {
 			result = (channel % 100) + 1;// 1~100
-			System.out.println("ÇöÀçÃ¤³Î:" + result);
+			System.out.println("ï¿½ï¿½ï¿½ï¿½Ã¤ï¿½ï¿½:" + result);
 			return result;
 		}
 		return result;
@@ -108,7 +108,7 @@ public class Tv {
 			} else {
 				result = (channel + 99) % 100;
 			}
-			System.out.println("ÇöÀçÃ¤³Î:" + result);
+			System.out.println("ï¿½ï¿½ï¿½ï¿½Ã¤ï¿½ï¿½:" + result);
 			return result;
 		}
 		return result;
@@ -118,7 +118,7 @@ public class Tv {
 		if (power) {
 			if (chanel <= 100 && chanel > 0) {
 				int result = chanel;
-				System.out.println("º¯°æÃ¤³Î:" + result);
+				System.out.println("ï¿½ï¿½ï¿½ï¿½Ã¤ï¿½ï¿½:" + result);
 				return result;
 			}
 		}

@@ -3,27 +3,27 @@ package classExample;
 public class CarExample {
 
 	public static void main(String[] args) {
-		Car mycar = new Car("제니시스");
-		System.out.println(mycar.company);		
+		Car mycar = new Car("SUV", "Genesis");
+		System.out.println(mycar.type);
 		System.out.println(mycar.model);
-		System.out.println(mycar.color);
-		System.out.println(mycar.maxSpeed);
-		mycar.maxSpeed = 300;
-		System.out.println("최고 속도 변경 : " + mycar.maxSpeed);
+		System.out.println();
 		
-		Car sCar = new Car("BMW","5 시리즈");
-		System.out.println(sCar.company);		
-		System.out.println(sCar.model);
-		System.out.println(sCar.color);
-		System.out.println(sCar.maxSpeed);
+		Car yourCar = new Car();
+		System.out.println(yourCar.type);
+		System.out.println(yourCar.model);
+		yourCar.company = "BMW";
+		yourCar.model = "M Series";
+		
+		System.out.println(yourCar.company);
+		System.out.println(yourCar.model);
 	}
 }
 
 class Car {
-	String company = "현대자동차"; 
-	String model = "그랜저";
-	String color = "검은색";
-	String type = "세단";
+	String company = "hundai";
+	String model = "Genesis";
+	String color = "White";
+	String type = "Sedan";
 	int maxSpeed = 200;
 	int speed;
 	
@@ -36,5 +36,5 @@ class Car {
 		model = _model;
 	}
 	
-	//Car() {}; // 자동생성 기본생성자
+	Car() {}; //Default Constructor
 }
