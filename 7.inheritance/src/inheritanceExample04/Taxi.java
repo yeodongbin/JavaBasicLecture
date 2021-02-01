@@ -1,7 +1,7 @@
 /*
-1km╢Г 100©Ь
+1kmО©╫О©╫ 100О©╫О©╫
 */
-package inheritance_taxi;
+package inheritanceExample04;
 
 public class Taxi extends Car {
 	
@@ -32,7 +32,7 @@ public class Taxi extends Car {
 
 	@Override
 	public String toString() {
-		return super.toString() + "ец╫ц" ;
+		return super.toString() + "О©╫ц╫О©╫" ;
 	}
 
 	@Override

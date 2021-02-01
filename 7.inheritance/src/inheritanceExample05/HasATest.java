@@ -1,16 +1,16 @@
-package inheritanceExample;
+package inheritanceExample05;
 
 import java.awt.*;
 
 public class HasATest {
 
-	Frame f = new Frame("Æ÷ÇÔ°ü°è");
-	Button b = new Button("È®ÀÎ");
+	Frame f = new Frame("ï¿½ï¿½ï¿½Ô°ï¿½ï¿½ï¿½");
+	Button b = new Button("È®ï¿½ï¿½");
 
 	public HasATest() {
 		//f.setTitle("Has A Test");
 		f.setLayout(new FlowLayout());
-		//b.setLabel("´­·¯!!!");
+		//b.setLabel("ï¿½ï¿½ï¿½ï¿½!!!");
 		f.add(b);
 		f.setBackground(Color.CYAN);
 		f.setLocation(300, 200);

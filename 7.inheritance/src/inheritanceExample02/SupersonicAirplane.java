@@ -1,4 +1,4 @@
-package superClass;
+package inheritanceExample02;
 
 public class SupersonicAirplane extends Airplane {
 	public static final int NORMAL =1;

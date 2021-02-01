@@ -1,12 +1,12 @@
-package driver;
+package inheritanceExample01;
 
 public class Bus extends Vehicle {
 	@Override
 	void run() {
-		System.out.println("Bus ÀÌ ´Þ¸°´Ù.");
+		System.out.println("Bus ï¿½ï¿½ ï¿½Þ¸ï¿½ï¿½ï¿½.");
 	}
 	
 	void price() {
-		System.out.println("Bus¿¡ µ·À» Áö±Þ");
+		System.out.println("Busï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½");
 	}
 }

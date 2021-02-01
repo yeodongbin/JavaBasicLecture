@@ -1,4 +1,4 @@
-package modifier;
+package access_modifier02;
 
 
 public class Modifier {

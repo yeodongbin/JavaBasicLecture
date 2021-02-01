@@ -1,12 +1,12 @@
-package driver;
+package inheritanceExample01;
 
 public class Texi extends Vehicle{
 	@Override
 	void run() {
-		System.out.println("Texi ÀÌ ´Þ¸°´Ù.");
+		System.out.println("Texi ï¿½ï¿½ ï¿½Þ¸ï¿½ï¿½ï¿½.");
 	}
 	
 	void price() {
-		System.out.println("Texi¿¡ µ·À» Áö±Þ");
+		System.out.println("Texiï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½");
 	}
 }

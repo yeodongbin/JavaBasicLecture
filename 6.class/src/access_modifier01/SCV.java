@@ -1,28 +1,23 @@
-package access_modifier;
+package access_modifier01;
 
 public class SCV { //default
-	int hp = 100; 
-	int attack = 10;//default
-	int defence = 5;
+public SCV() {}
 	
-	SCV() {
-		
+	private int hp = 100;
+	private int mp = 0;
+	private int defence = 5;
+	private int attack = 5;
+	
+	public int getHP() { //getter
+		return hp;
 	}
 	
-	public void attack() {
-		System.out.println
-		("공격중입니다.");
-	}
-	void defence() {
-		System.out.println
-		("방어중입니다.");
+	public void attack(SCV scv) { //setter
+		scv.hp--;
 	}
 	
-	int getHP() {
-		return this.hp;	
-	}
-	
-	void setHP(int hp) {
-		this.hp = hp;
+	public void check() { //getter
+		System.out.println("Defence Level : " + defence);
+		System.out.println("Attack Level : " + attack);
 	}
 }

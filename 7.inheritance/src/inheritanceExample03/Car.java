@@ -1,4 +1,4 @@
-package sonata;
+package inheritanceExample03;
 
 public class Car {
 
@@ -13,7 +13,7 @@ public class Car {
 
 	@Override
 	public String toString() {
-		return "[»ö»ó] : " + color + "\t[»ý»ê¼ö·®] : " + account;
+		return "[ï¿½ï¿½ï¿½ï¿½] : " + color + "\t[ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½] : " + account;
 	}
 
 }

@@ -1,4 +1,4 @@
-package inheritanceExample;
+package inheritanceExample05;
 
 public class Call {
 	

@@ -1,16 +1,16 @@
-package inheritanceExample;
+package inheritanceExample05;
 import java.awt.*;
 
 public class IsATest extends Frame {
 
-	//Frame f = new Frame("»ó¼Ó°ü°è");
-	Button b = new Button("È®ÀÎ");
+	//Frame f = new Frame("ï¿½ï¿½Ó°ï¿½ï¿½ï¿½");
+	Button b = new Button("È®ï¿½ï¿½");
 
 	public IsATest() {
-		super("»ó¼Ó°ü°è");
+		super("ï¿½ï¿½Ó°ï¿½ï¿½ï¿½");
 		//setTitle("Is A Test");
 		setLayout(new FlowLayout());
-		//b.setLabel("´­·¯!!!");
+		//b.setLabel("ï¿½ï¿½ï¿½ï¿½!!!");
 		add(b);
 		setBackground(Color.CYAN);
 		setLocation(300, 200);

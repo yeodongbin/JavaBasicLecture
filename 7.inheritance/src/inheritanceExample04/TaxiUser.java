@@ -1,4 +1,4 @@
-package inheritance_taxi;
+package inheritanceExample04;
 
 public class TaxiUser {
 	public static void main(String[] args) {
@@ -6,18 +6,18 @@ public class TaxiUser {
 		int km = 25;
 		System.out.println("Current Spe " + km + "kmï¿½Ìµï¿½!!!!");
 		int price = taxi.calcPrice(km);
-		// 25km ï¿½Ìµï¿½ï¿½ï¿½ ï¿½ï¿½ï¿? : 5500ï¿½ï¿½
-		System.out.println(km + "km ï¿½Ìµï¿½ï¿½ï¿½ ï¿½ï¿½ï¿? : " + price);
-		// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿? : 5500ï¿½ï¿½
-		System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿? : " + taxi.totalPrice);
+		// 25km ï¿½Ìµï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½? : 5500ï¿½ï¿½
+		System.out.println(km + "km ï¿½Ìµï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½? : " + price);
+		// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½? : 5500ï¿½ï¿½
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½? : " + taxi.totalPrice);
 
 		km = 25;
-		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿? " + km + "kmï¿½Ìµï¿½!!!!");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½? " + km + "kmï¿½Ìµï¿½!!!!");
 		price = taxi.calcPrice(km);
-		// 25km ï¿½Ìµï¿½ï¿½ï¿½ ï¿½ï¿½ï¿? : 5500ï¿½ï¿½
-		System.out.println(km + "km ï¿½Ìµï¿½ï¿½ï¿½ ï¿½ï¿½ï¿? : " + price);
-		// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿? : 11000ï¿½ï¿½
-		System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿? : " + taxi.totalPrice);
+		// 25km ï¿½Ìµï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½? : 5500ï¿½ï¿½
+		System.out.println(km + "km ï¿½Ìµï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½? : " + price);
+		// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½? : 11000ï¿½ï¿½
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½? : " + taxi.totalPrice);
 
 		// ï¿½ï¿½ï¿½ë¿¡ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ò³ï¿½Å¸ï¿½Ã½ï¿½
 		System.out.println(taxi.maker + "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ " + taxi.carColor + " " + taxi.carName + "ï¿½Ã½ï¿½");

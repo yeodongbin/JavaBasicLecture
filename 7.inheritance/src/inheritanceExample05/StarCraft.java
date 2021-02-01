@@ -1,49 +1,49 @@
-package inheritanceExample;
+package inheritanceExample05;
 
 public class StarCraft {
 	public static void main(String[] args) {
 		Marine my = new Marine();
 		Marine com = new Marine();
 
-		//³»Ã¼·Â	  ÄÄÃ¼·Â
-		//Ã¼·Â : 100  Ã¼·Â : 100
+		//ï¿½ï¿½Ã¼ï¿½ï¿½	  ï¿½ï¿½Ã¼ï¿½ï¿½
+		//Ã¼ï¿½ï¿½ : 100  Ã¼ï¿½ï¿½ : 100
 		System.out.println(my + "\t" + com);
-		System.out.println("³»°¡ ÄÄÀ» 2È¸ °ø°Ý!!!!");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ 2È¸ ï¿½ï¿½ï¿½ï¿½!!!!");
 		for(int i=0;i<2;i++)
 			my.attack(com);
-		//Ã¼·Â : 100  Ã¼·Â : 80
+		//Ã¼ï¿½ï¿½ : 100  Ã¼ï¿½ï¿½ : 80
 		System.out.println(my + "\t" + com);
-		System.out.println("ÄÄÀÌ ³ª¸¦ 6È¸ °ø°Ý!!!!");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ 6È¸ ï¿½ï¿½ï¿½ï¿½!!!!");
 		for(int i=0;i<6;i++)
 			com.attack(my);
-		//Ã¼·Â : 40  Ã¼·Â : 80
+		//Ã¼ï¿½ï¿½ : 40  Ã¼ï¿½ï¿½ : 80
 		System.out.println(my + "\t" + com);
-		System.out.println("³»°¡ ÄÄÀ» 4È¸ °ø°Ý!!!!");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ 4È¸ ï¿½ï¿½ï¿½ï¿½!!!!");
 		for(int i=0;i<4;i++)
 			my.attack(com);
-		//Ã¼·Â : 40  Ã¼·Â : 40
+		//Ã¼ï¿½ï¿½ : 40  Ã¼ï¿½ï¿½ : 40
 		System.out.println(my + "\t" + com);
-		System.out.println("³»¸¶¸°À» ÈïºÐ¸ðµå·Î º¯°æ");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ð¸ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½");
 		my.setMode(1);
-		//Ã¼·Â : 15  Ã¼·Â : 40
+		//Ã¼ï¿½ï¿½ : 15  Ã¼ï¿½ï¿½ : 40
 		System.out.println(my + "\t" + com);
-		System.out.println("³»°¡ ÄÄÀ» 1È¸ °ø°Ý!!!!");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ 1È¸ ï¿½ï¿½ï¿½ï¿½!!!!");
 		my.attack(com);
-		//Ã¼·Â : 15  Ã¼·Â : 15
+		//Ã¼ï¿½ï¿½ : 15  Ã¼ï¿½ï¿½ : 15
 		System.out.println(my + "\t" + com);
-		System.out.println("³»¸¶¸°À» ÈïºÐ¸ðµå·Î º¯°æ");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ð¸ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½");
 		my.setMode(1);
-		//Ã¼·ÂÀÌ 30ÀÌÇÏÀÌ¹Ç·Î ¸ðµåº¯°æ ºÒ°¡´É.
+		//Ã¼ï¿½ï¿½ï¿½ï¿½ 30ï¿½ï¿½ï¿½ï¿½ï¿½Ì¹Ç·ï¿½ ï¿½ï¿½åº¯ï¿½ï¿½ ï¿½Ò°ï¿½ï¿½ï¿½.
 		System.out.println(my + "\t" + com);
 
-		System.out.println("³»°¡ ÄÄÀ» 1È¸ °ø°Ý!!!!");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ 1È¸ ï¿½ï¿½ï¿½ï¿½!!!!");
 		my.attack(com);
-		//Ã¼·Â : 15  Ã¼·Â : die
+		//Ã¼ï¿½ï¿½ : 15  Ã¼ï¿½ï¿½ : die
 		System.out.println(my + "\t" + com);
 
 
 		my.setMode(1);
-		//Ã¼·Â : 15  Ã¼·Â : 40
+		//Ã¼ï¿½ï¿½ : 15  Ã¼ï¿½ï¿½ : 40
 		System.out.println(my + "\t" + com);
 	}
 }

@@ -1,4 +1,4 @@
-package drama;
+package override_example01;
 
 public class Drama extends TVProgram {
 
@@ -16,11 +16,11 @@ public class Drama extends TVProgram {
 	@Override
 	public String toString() {
 		String tmp = "";
-		tmp += "°¨µ¶ : " + director + "\n";
+		tmp += "ï¿½ï¿½ï¿½ï¿½ : " + director + "\n";
 		if(actor != null)
-			tmp += "³²¹è¿ì : " + actor + "\n";
+			tmp += "ï¿½ï¿½ï¿½ï¿½ï¿½ : " + actor + "\n";
 		if(actress != null)
-			tmp += "¿©¹è¿ì : " + actress + "\n";
+			tmp += "ï¿½ï¿½ï¿½ï¿½ï¿½ : " + actress + "\n";
 		return super.toString() + tmp;
 	}
 

@@ -1,7 +1,7 @@
-package driver;
+package inheritanceExample01;
 
 public class Vehicle {
 	void run() {
-		System.out.println("Vehicle ÀÌ ´Þ¸°´Ù.");
+		System.out.println("Vehicle ï¿½ï¿½ ï¿½Þ¸ï¿½ï¿½ï¿½.");
 	}
 }

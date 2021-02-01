@@ -1,4 +1,4 @@
-package sonata;
+package inheritanceExample03;
 
 public class Sonata extends Car {
 
@@ -13,7 +13,7 @@ public class Sonata extends Car {
 
 	@Override
 	public String toString() {
-		return super.toString() + "\t[¿ëµµ] : " + use + "\t[½Ã¸®Áî] : " + series;
+		return super.toString() + "\t[ï¿½ëµµ] : " + use + "\t[ï¿½Ã¸ï¿½ï¿½ï¿½] : " + series;
 	}
 
 }

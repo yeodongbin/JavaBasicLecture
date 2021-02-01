@@ -1,13 +1,13 @@
-package drama;
+package override_example01;
 
 public class DramaArrayTest {
 
 	public static void main(String[] args) {
 		TVProgram tvp[] = new TVProgram[4];
-		tvp[0] = new Drama("±×°Ü¿ï", "SBS", "±è±ÔÅÂ", "Á¶ÀÎ¼º", "¼ÛÇý±³");
-		tvp[1] = new Drama("¹é³â", "MBC", "ÁÖÀ¯¼ö", "Áø±¸", null);
-		tvp[2] = new Drama("¾ÆÀÌ¸®½º", "KBS", "Ç¥¹Î¼ö", "ÀåÇõ", "ÀÌ´ÙÇØ");
-		tvp[3] = new Drama("ÃÖ°í´Ù", "KBS", "À±¼º½Ä", null, "¾ÆÀÌÀ¯");
+		tvp[0] = new Drama("ï¿½×°Ü¿ï¿½", "SBS", "ï¿½ï¿½ï¿½ï¿½ï¿½", "ï¿½ï¿½ï¿½Î¼ï¿½", "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+		tvp[1] = new Drama("ï¿½ï¿½ï¿½", "MBC", "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", "ï¿½ï¿½ï¿½ï¿½", null);
+		tvp[2] = new Drama("ï¿½ï¿½ï¿½Ì¸ï¿½ï¿½ï¿½", "KBS", "Ç¥ï¿½Î¼ï¿½", "ï¿½ï¿½ï¿½ï¿½", "ï¿½Ì´ï¿½ï¿½ï¿½");
+		tvp[3] = new Drama("ï¿½Ö°ï¿½ï¿½", "KBS", "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", null, "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 
 		int len = tvp.length;
 		for (int i = 0; i < len; i++) {

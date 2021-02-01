@@ -1,4 +1,4 @@
-package driver;
+package inheritanceExample01;
 
 public class Driver {
 	//Overload
@@ -12,7 +12,7 @@ public class Driver {
 //		texi.price();
 //	}
 	
-	//´ÙÇü¼º
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	void driver(Vehicle vehicle) {
 		vehicle.run();
 		//vehicle.price();

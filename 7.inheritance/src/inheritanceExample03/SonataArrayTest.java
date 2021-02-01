@@ -1,13 +1,13 @@
-package sonata;
+package inheritanceExample03;
 
 public class SonataArrayTest {
 
 	public static void main(String[] args) {
 		Sonata sonata[] = new Sonata[4];
-		sonata[0] = new Sonata("Èò»ö", 5000, "NF", "½Â¿ë");
-		sonata[1] = new Sonata("Àº»ö", 7000, "Brilliant", "¾÷¹«");
-		sonata[2] = new Sonata("°¨È«»ö", 4000, "EF", "ÅÃ½Ã");
-		sonata[3] = new Sonata("°ËÁ¤»ö", 6000, "ÇÏÀÌºê¸®µå", "½Â¿ë");
+		sonata[0] = new Sonata("ï¿½ï¿½ï¿½", 5000, "NF", "ï¿½Â¿ï¿½");
+		sonata[1] = new Sonata("ï¿½ï¿½ï¿½ï¿½", 7000, "Brilliant", "ï¿½ï¿½ï¿½ï¿½");
+		sonata[2] = new Sonata("ï¿½ï¿½È«ï¿½ï¿½", 4000, "EF", "ï¿½Ã½ï¿½");
+		sonata[3] = new Sonata("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", 6000, "ï¿½ï¿½ï¿½Ìºê¸®ï¿½ï¿½", "ï¿½Â¿ï¿½");
 
 		int len = sonata.length;
 		for (int i = 0; i < len; i++) {

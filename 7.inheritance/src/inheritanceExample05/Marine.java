@@ -1,14 +1,14 @@
 /*
 class : Marine
 field
-  - Ã¼·Â : hp (100)
-  - ¸ðµå : mode (0 >> °ø°Ý·Â 10, 1 >> °ø°Ý·Â 25(³»Ã¼·Â -25))
+  - Ã¼ï¿½ï¿½ : hp (100)
+  - ï¿½ï¿½ï¿½ : mode (0 >> ï¿½ï¿½ï¿½Ý·ï¿½ 10, 1 >> ï¿½ï¿½ï¿½Ý·ï¿½ 25(ï¿½ï¿½Ã¼ï¿½ï¿½ -25))
 
 method
-  - °ø°Ý : public [   RT   ] attack([  args  ]) {   }
-  - ¸ðµåº¯°æ : void setMode(int mode)
+  - ï¿½ï¿½ï¿½ï¿½ : public [   RT   ] attack([  args  ]) {   }
+  - ï¿½ï¿½åº¯ï¿½ï¿½ : void setMode(int mode)
 */
-package inheritanceExample;
+package inheritanceExample05;
 
 public class Marine {
 	int hp;
@@ -45,9 +45,9 @@ public class Marine {
 	@Override
 	public String toString() {
 		if(modeOk)
-			return "Ã¼·Â : " + (hp <= 0 ? "die" : hp + ""); 
+			return "Ã¼ï¿½ï¿½ : " + (hp <= 0 ? "die" : hp + ""); 
 		else
-			return "30ÀÌÇÏ´Â º¯°æ ºÒ°¡´É";
+			return "30ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ò°ï¿½ï¿½ï¿½";
 	}
 }
 

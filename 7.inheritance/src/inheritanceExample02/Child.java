@@ -1,4 +1,4 @@
-package superClass;
+package inheritanceExample02;
 
 public class Child extends Parent{
 	private int studentNo;

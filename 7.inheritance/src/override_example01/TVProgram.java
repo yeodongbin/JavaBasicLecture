@@ -1,4 +1,4 @@
-package drama;
+package override_example01;
 
 public class TVProgram {
 	private String title;

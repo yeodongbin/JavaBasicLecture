@@ -1,4 +1,4 @@
-package access_modifier;
+package access_modifier01;
 
 public class TVExample {
 

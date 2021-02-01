@@ -1,4 +1,4 @@
-package access_modifier;
+package access_modifier01;
 
 public class TV {
 	private boolean power = false;
@@ -50,7 +50,7 @@ public class TV {
 			if ((ch >= minCh) && (ch <= maxCh)) {
 				channal = ch;
 			} else {
-				System.out.println(ch + "Àº ÀûÀýÇÑ ÀÔ·ÂÀÌ ¾Æ´Õ´Ï´Ù.");
+				System.out.println(ch + "ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½ï¿½ ï¿½Æ´Õ´Ï´ï¿½.");
 			}
 		}
 		System.out.println("channal : " + channal);
@@ -60,7 +60,7 @@ public class TV {
 	int volUp() {
 		if (power) {
 			if (volume == maxVol) {
-				System.out.println("ÃÖ´ëº¼·ýÀÔ´Ï´Ù.");
+				System.out.println("ï¿½Ö´ëº¼ï¿½ï¿½ï¿½Ô´Ï´ï¿½.");
 			} else {
 				volume++;
 			}
@@ -72,7 +72,7 @@ public class TV {
 	int volDown() {
 		if (power) {
 			if (volume == minVol) {
-				System.out.println("ÃÖ¼Òº¼·ýÀÔ´Ï´Ù.");
+				System.out.println("ï¿½Ö¼Òºï¿½ï¿½ï¿½ï¿½Ô´Ï´ï¿½.");
 			} else {
 				volume--;
 			}
@@ -87,12 +87,12 @@ public class TV {
 				mute = true;
 				tempVol = volume;
 				volume = 0;
-				System.out.println("À½¼Ò°Å ÀÔ´Ï´Ù.");
+				System.out.println("ï¿½ï¿½ï¿½Ò°ï¿½ ï¿½Ô´Ï´ï¿½.");
 			} else {
 				mute = false;
 				volume = tempVol;
 				tempVol = 0;
-				System.out.println("À½¼Ò°Å¸¦ Á¦°ÅÇÕ´Ï´Ù.");
+				System.out.println("ï¿½ï¿½ï¿½Ò°Å¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.");
 			}
 		}
 	}

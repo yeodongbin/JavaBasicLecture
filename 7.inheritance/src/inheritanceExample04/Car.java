@@ -1,18 +1,18 @@
 
 /*
-class : ÀÚµ¿Â÷ Car
-¼Ó¼º :	ÀÌ¸§ >> String carName	
-		»ö»ó >>	String carColor
-		Á¦Á¶»ç >> String maker
-		¼Óµµ >> int speed
+class : ï¿½Úµï¿½ï¿½ï¿½ Car
+ï¿½Ó¼ï¿½ :	ï¿½Ì¸ï¿½ >> String carName	
+		ï¿½ï¿½ï¿½ï¿½ >>	String carColor
+		ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ >> String maker
+		ï¿½Óµï¿½ >> int speed
        
 
-±â´É :	°¡¼Ó >> public void speedUp()
-		°¨¼Ó >> void speedDown()
-		Á¤Áö >> void stop()
+ï¿½ï¿½ï¿½ :	ï¿½ï¿½ï¿½ï¿½ >> public void speedUp()
+		ï¿½ï¿½ï¿½ï¿½ >> void speedDown()
+		ï¿½ï¿½ï¿½ï¿½ >> void stop()
 */
 
-package inheritance_taxi;
+package inheritanceExample04;
 
 public class Car {
 	
@@ -22,15 +22,15 @@ public class Car {
 	int speed;
 
 	public Car() {
-		this("½î³ªÅ¸", "°ËÁ¤»ö", "Çö´ë");
+		this("ï¿½î³ªÅ¸", "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", "ï¿½ï¿½ï¿½ï¿½");
 	}
 
 	public Car(String carName) {
-		this(carName, "Èò»ö", "±â¾Æ");
+		this(carName, "ï¿½ï¿½ï¿½", "ï¿½ï¿½ï¿½");
 	}
 
 	public Car(String carName, String carColor) {
-		this(carName, carColor, "±â¾Æ");
+		this(carName, carColor, "ï¿½ï¿½ï¿½");
 	}
 
 	public Car(String carName, String carColor, String maker) {
@@ -65,7 +65,7 @@ public class Car {
 
 	@Override
 	public String toString() {
-		return maker + "¿¡¼­ ¸¸µç " + carColor + " " + carName ;
+		return maker + "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ " + carColor + " " + carName ;
 	}
 
 }
