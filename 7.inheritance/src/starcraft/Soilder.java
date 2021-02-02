@@ -1,20 +1,17 @@
-package starCraft;
+package starcraft;
 
-public class Soilder extends Unit{
-	
+public class Soilder extends Units{
 	Soilder() {
-		super("Soilder");
-		super.hp = 100;
-		super.mp = 0;
-		super.power = 10;
-		super.speed = 5;
+		this.hp = 90;
+		this.mp = 10 ;
+		this.attackLevel = 10;
+		this.defenceLevel = 5;
 	}
 	
-	void attack(SCV scv) {
-		//scv.hp -= super.power;
+	void attack(Units unit) {
+		unit.hp = unit.hp - (this.attackLevel - unit.defenceLevel);
+		System.out.println(this.type + " attacks " + unit.type);
 	}
 	
-	void attack(Marine marine) {
-		marine.hp -= super.power;
-	}
+
 }

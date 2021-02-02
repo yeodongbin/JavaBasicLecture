@@ -1,15 +1,17 @@
 package inheritanceExample02;
 
 public class Airplane {
+	String type = "Big";
+	
 	public void land() {
-		System.out.println("Land");
+		System.out.println("Landing~");
 	}
-
+	
 	public void fly() {
-		System.out.println("Fly");
+		System.out.println("Flying~");
 	}
-
+	
 	public void takeOff() {
-		System.out.println("Take Off");
+		System.out.println("Take Off~");
 	}
 }

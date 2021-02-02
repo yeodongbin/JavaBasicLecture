@@ -1,37 +1,15 @@
-package starCraft;
+package starcraft;
 
-public class Worker extends Unit {
-	int mineral = 0;
-
+public class Worker extends Units {
 	Worker() {
-		super("Worker");
-		super.hp = 100;
-		super.mp = 0;
-		super.power = 5;
-		super.speed = 3;
+		this.hp = 50;
+		this.mp = 0 ;
+		this.attackLevel = 5;
+		this.defenceLevel = 0;
 	}
-
-	void mind(int x, int y) {
-		if (x == 10 && y == 10) {
-			mineral += 10;
-			System.out.println("미네랄 캤다!!");
-			System.out.println("현재 미네랄:" + mineral);
-		}
-	}
-
-	void attack(SCV scv) {
-		if (scv.hp > 0) {
-			scv.hp -= super.power;
-		} else {
-			System.out.println("상대가 전사했습니다.");
-		}
-	}
-
-	void attack(Marine marine) {
-		if (marine.hp > 0) {
-			marine.hp -= super.power;
-		} else {
-			System.out.println("상대가 전사했습니다.");
-		}
+	
+	void mine(int x, int y) {
+		System.out.println("Mining : " 
+	          + x + ", " + y);
 	}
 }

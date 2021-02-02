@@ -1,20 +1,13 @@
 package inheritanceExample01;
 
 public class Driver {
-	//Overload
-//	void driver(Bus bus) {
-//		bus.run();
-//		bus.price();
-//	}
-//	
-//	void driver(Texi texi) {
-//		texi.run();
-//		texi.price();
-//	}
+	String name;
 	
-	//������
-	void driver(Vehicle vehicle) {
-		vehicle.run();
-		//vehicle.price();
+	Driver(String name) {
+		this.name = name;
+	}
+	
+	void whatName() {
+		System.out.println(name);
 	}
 }

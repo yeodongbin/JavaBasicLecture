@@ -1,12 +1,20 @@
 package inheritanceExample01;
 
 public class Texi extends Vehicle{
-	@Override
-	void run() {
-		System.out.println("Texi �� �޸���.");
+Driver driver = null;
+	
+	Texi(Driver driver) {
+		super("Texi");
+		this.driver = driver; 
 	}
 	
 	void price() {
-		System.out.println("Texi�� ���� ����");
+		System.out.println("Texi Price()");
+	}
+	
+	@Override
+	void run() {
+		super.run();
+		System.out.println("Driver Name : " + driver.name);
 	}
 }

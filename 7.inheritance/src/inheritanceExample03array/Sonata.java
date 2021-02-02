@@ -1,19 +1,19 @@
-package inheritanceExample03;
+package inheritanceExample03array;
 
 public class Sonata extends Car {
 
 	private String series;
-	private String use;
-
-	public Sonata(String color, int account, String series, String use) {
-		super(color, account);
+	private String master;
+	
+	Sonata(String color, int number, String series, String master) {
+		super(color, number);
 		this.series = series;
-		this.use = use;
+		this.master = master;
 	}
-
+	
 	@Override
 	public String toString() {
-		return super.toString() + "\t[�뵵] : " + use + "\t[�ø���] : " + series;
+		return super.toString() + "\tSeries : "+series + "\tMaster : " + master;
 	}
 
 }

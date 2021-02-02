@@ -1,8 +1,13 @@
-package starCraft;
+package starcraft;
 
 public class Marine extends Soilder{
-	void stimpack() {
-		super.power = 20;
-		super.hp -= 10;
+	
+	Marine() {
+		this.type = "Marine";
+	}
+	
+	void stimpac() {
+		this.hp--;
+		this.attackLevel++;
 	}
 }

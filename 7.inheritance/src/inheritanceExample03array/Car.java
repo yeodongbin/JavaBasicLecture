@@ -1,19 +1,17 @@
-package inheritanceExample03;
+package inheritanceExample03array;
 
 public class Car {
 
 	private String color;
-	private int account;
-
-	public Car(String color, int account) {
-		super();
+	private int number = 0;
+	
+	public Car(String color, int number) {
 		this.color = color;
-		this.account = account;
+		this.number = number;
 	}
-
+	
 	@Override
 	public String toString() {
-		return "[����] : " + color + "\t[�������] : " + account;
+		return "Color : " + color + "\tNumber : " + number;
 	}
-
 }

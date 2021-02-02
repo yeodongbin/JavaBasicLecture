@@ -1,4 +1,4 @@
-package protectedKeyword;
+package inheritanceExample06protected;
 
 import finalKeyword.Car;
 

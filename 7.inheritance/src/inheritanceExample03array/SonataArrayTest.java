@@ -1,17 +1,16 @@
-package inheritanceExample03;
+package inheritanceExample03array;
 
 public class SonataArrayTest {
 
 	public static void main(String[] args) {
-		Sonata sonata[] = new Sonata[4];
-		sonata[0] = new Sonata("���", 5000, "NF", "�¿�");
-		sonata[1] = new Sonata("����", 7000, "Brilliant", "����");
-		sonata[2] = new Sonata("��ȫ��", 4000, "EF", "�ý�");
-		sonata[3] = new Sonata("������", 6000, "���̺긮��", "�¿�");
-
-		int len = sonata.length;
-		for (int i = 0; i < len; i++) {
-			System.out.println(sonata[i]);
+		Sonata[] sonata = new Sonata[4];
+		sonata[0] = new Sonata("Black", 1111, "NF", "Yeo");
+		sonata[1] = new Sonata("White", 1112, "YF", "Yeo");
+		sonata[2] = new Sonata("Black", 1113, "EF", "Yeo");
+		sonata[3] = new Sonata("Gray", 1114, "BF", "Yeo");
+		
+		for (Sonata s : sonata) {
+			System.out.println(s);
 		}
 	}
 }
