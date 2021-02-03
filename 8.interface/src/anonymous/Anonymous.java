@@ -2,46 +2,61 @@ package anonymous;
 
 public class Anonymous {
 
-	//« µÂ
+	// ÏùµÎ™ÖÍµ¨ÌòÑÍ∞ùÏ≤¥ Anonymous
+	// field
 	Remote remote = new Remote() {
 		@Override
-		public void turnOn() {}
+		public void turnOn() {
+		}
+
 		@Override
-		public void turnOff() {}
+		public void turnOff() {
+		}
 	};
-	
-	//∏≈º≠µÂ
-	void method() {
-		Remote localRemote = new Remote() {
+
+	// method1
+	void method1() {
+		Remote localremote = new Remote() {
 			@Override
-			public void turnOn() {}
+			public void turnOn() {
+			}
+
 			@Override
-			public void turnOff() {}			
+			public void turnOff() {
+			}
 		};
+
 	}
-	
+
+	// method2
 	void method2(Remote remote) {
+		remote.turnOn();
 	}
-	
+
 	public static void main(String[] args) {
-		//∫Øºˆ
 		Anonymous anony = new Anonymous();
 		anony.remote.turnOn();
-		
-		Remote remote = new Remote() {
-			@Override
-			public void turnOn() {}
-			@Override
-			public void turnOff() {}
-		};
-		
-		//∏≈º≠µÂ ∏≈∞≥∫Øºˆ
+		anony.method1();
 		anony.method2(new Remote() {
 			@Override
-			public void turnOn() {}
+			public void turnOn() {
+			}
+
 			@Override
-			public void turnOff() {}
+			public void turnOff() {
+			}
 		});
+
+		// local variable
+		Remote remote = new Remote() {
+			@Override
+			public void turnOn() {
+			}
+
+			@Override
+			public void turnOff() {
+			}
+		};
 	}
 
 }

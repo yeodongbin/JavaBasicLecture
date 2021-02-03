@@ -3,20 +3,22 @@ package polymorphism;
 public class ChildExample {
 
 	public static void main(String[] args) {
-		Child child = new Child();
-		Parent parent2 = new Parent();
+		Parent parent = new Child();
 
-		Parent parent = child;
 		parent.method1();
 		parent.method2();
-		// parent.method3();//불가능
+		// parent.method3();
 
-		if (parent instanceof Child) {     //현재 변수 이전 객체 확인
-			Child child2 = (Child) parent; //강제 형변환
-			child2.method1();
-			child2.method2();
-			child2.method3();// 사용목적
+		if (parent instanceof Child) {
+			System.out.println("parent = Child()");
+			int a = (int) 10.2;
+
+			Child child = (Child) parent;
+
+			child.method1();
+			child.method2();
+			child.method3();
 		}
-	}
 
+	}
 }

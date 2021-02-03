@@ -1,21 +1,25 @@
 package interfaceExample;
 
 public interface RemoteControl {
+	// ìƒìˆ˜
 	public static final int MAX_VOLUME = 10;
-	public int MIN_VOLUME = 0; //static final »ı·«
-	
-	public abstract void turnOn();
-	public void turnOff(); //abstract »ı·«
-	
+	public int MIN_VOLUME = 0; // static final ìë™ì¸ì‹
+
+	// ì¶”ìƒ ë§¤ì„œë“œ(Abstract method)
+	public abstract void remoteTurnOn();
+	public void remoteTurnOff();
+
+	// Remote Controlì˜ ê³ ìœ  ê¸°ëŠ¥
+	public static void changeBattery() {
+		System.out.println("change Battery~");
+	}
+
+	// default method => code update
 	public default void setMute(boolean mute) {
 		if (mute) {
-			System.out.println("¹«À½");
+			System.out.println("mute On!!!");
 		} else {
-			System.out.println("À¯À½");
+			System.out.println("mute Off!!!");
 		}
-	}
-	
-	public static void changeBattery() {
-		System.out.println("°ÇÀüÁö ±³È¯");
 	}
 }

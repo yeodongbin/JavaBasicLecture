@@ -1,20 +1,35 @@
 package inheritanceExample05;
 
-public class Call {
-	
-	int x;
+public class Callby {
 
-	public Call() {
+	int x;
+	
+	Callby() {
 		x = 10;
 	}
 	
+	
 	public void changeVar(int y) {
 		y += y;
-		System.out.println("call y === " + y);//60
+		System.out.println("changeVar: y = " + y);
+		
 	}
-
-	public void changeRef(Call c) {
-		c.x = 80;
+	
+	public void changeRef(Callby callby) {
+		callby.x = 100;
+	}
+	
+		
+	public static void main(String[] args) {
+		Callby callby = new Callby();
+		
+		int y = 20;
+		callby.changeVar(y);
+		System.out.println("y = " + y);
+		
+		System.out.println("callby.x = " + callby.x);
+		callby.changeRef(callby);
+		System.out.println("callby.x = " + callby.x);
 	}
 
 }

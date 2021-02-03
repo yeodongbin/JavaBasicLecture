@@ -1,8 +1,7 @@
 package interfaceExample;
 
-public abstract class Tv implements RemoteControl {
-	@Override
-	public void turnOn() {
-		System.out.println("TV turn on");
-	}
+public interface Tv extends RemoteControl {
+	public abstract void turnOn();
+	public void turnOff(); //abstract method 자동인식
+	
 }
