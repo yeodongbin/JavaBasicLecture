@@ -17,8 +17,8 @@ public class LoginExample {
 	}
 	
 	public static void login(String id, String password)    {
-		if (!id.equals("blue")) {
-			//
+		if (!id.equals("minho")) {
+			//throw new IDException("wrong ID~");
 		}
 		
 		if (!password.equals("12345")) {

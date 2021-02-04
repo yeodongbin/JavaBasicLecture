@@ -7,7 +7,7 @@ public class AccountExample {
 		
 		account.deposit(10000);
 		
-		System.out.println("¿¹±Ý¾×: " + account.getBalance());
+		System.out.println("Balance : " + account.getBalance());
 		
 		try {
 			account.withdraw(30000);

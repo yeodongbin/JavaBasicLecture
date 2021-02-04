@@ -1,11 +1,11 @@
-package genernicInheritance;
+package genernic_inheritance;
 
 public class StorageImpl<T> implements Storage<T> {
 	private T[] array;
 
 	public StorageImpl(int capacity) {
 		System.out.println("StorageImpl()");
-		this.array = (T[]) (new Object[capacity]);//»ý¼º X new T[n]
+		this.array = (T[]) (new Object[capacity]);//ï¿½ï¿½ï¿½ï¿½ X new T[n]
 	}
 
 	@Override

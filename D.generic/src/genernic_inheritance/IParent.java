@@ -1,4 +1,4 @@
-package genernicInheritance;
+package genernic_inheritance;
 
 public interface IParent <T, M> {}
 

@@ -14,11 +14,18 @@ public class Account {
 		balance += money;
 	}
 
-	public void withdraw(int money) throws BalanceInsufficientException {
-		if (balance < money) {
-			throw new BalanceInsufficientException("�ܰ�����:" + (money - balance) + "���ڶ�");
+	public int withdraw(int money) throws BalanceInsufficientException{
+		int withdrawMoney = money;
+		
+		if (this.balance < withdrawMoney) {
+			withdrawMoney = 0;
+			throw new BalanceInsufficientException("통장 잔고가 없습니다.");
+			//System.out.println("통장 잔고가 없습니다.");
+		} else {
+			this.balance -= withdrawMoney;
 		}
-		balance -= money;
+			
+		return withdrawMoney;
 	}
 
 }

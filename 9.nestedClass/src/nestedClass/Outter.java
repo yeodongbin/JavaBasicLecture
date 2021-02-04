@@ -1,18 +1,38 @@
 package nestedClass;
 
 public class Outter {
-	String outter = "Outter field";
+	String outter = "outter field";
 
 	void method() {
-		System.out.println("Outter method");
+		System.out.println("outter method");
+		
+		class methodClass {
+			String methodClass = "method Class";
+			
+			void methodClass() {
+				System.out.println("method Class()");
+			}
+		}
+		
+		// 3.Local Class
+		methodClass mc = new methodClass();
+		mc.methodClass();
+		System.out.println(mc.methodClass);
 	}
 
-	// 중첩class - 인스턴스 멤버 클래스
 	class NestedClass {
-		String nested = "nested field";
+		String inner = "innter field";
 
-		void method() {
-			System.out.println("Nested method");
+		void innerMethod() {
+			System.out.println("innter method");
+		}
+	}
+	
+	static class statNestedClass {
+		String statInner = "stat innter field";
+
+		void statInnerMethod() {
+			System.out.println("stat innter method");
 		}
 	}
 }

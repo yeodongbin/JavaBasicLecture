@@ -4,6 +4,15 @@ class A {
 	void autoPlay(Direct_interface i) {
 		i.play();
 	}
+
+	// Overload
+	void autoPlay(B b) {
+		b.play();
+	}
+
+	void autoPlay(C c) {
+		c.play();
+	}
 }
 
 class B implements Direct_interface {
@@ -21,7 +30,7 @@ class C implements Direct_interface {
 public class Direct {
 
 	public static void main(String[] args) {
-		A a =new A();
+		A a = new A();
 		a.autoPlay(new B());
 		a.autoPlay(new C());
 	}

@@ -1,119 +1,129 @@
 package linkedList;
 
 public class LinkedList {
+	class Node {
+		int data;
+		Node front, back;
 
-	Node head;
-	Node rear;
-	int size = 0;
-
-	
-	void firstNode(int data) {
-		Node newNode = new Node(data);
-		head = newNode;
-		rear = newNode;
-		size++;
-		System.out.println("firstNode(int data) ½ÇÇà");
-	}
-
-	void addRearNode(int data) {
-		if (size != 0) {
-			Node newNode = new Node(data);
-			rear.back = newNode;
-			newNode.front = rear;
-			rear = newNode;
-			size++;
-			System.out.println("addRearNode(int data) ½ÇÇà");
-		} else {
-			System.out.println("firstNode(int data) ½ÇÇà½ÃÄÑÁÖ¼¼¿ä");
+		Node(int data) {
+			this.data = data;
 		}
 	}
 
-	// ¾Õ´Ü¿¡ Node Ãß°¡
+	Node head, tail;
+	int size = 0;
+
 	void addHeadNode(int data) {
-		if (size != 0) {
-			Node newNode = new Node(data);
+		Node newNode = new Node(data);
+		if (size == 0) {
+			head = newNode;
+			tail = newNode;
+			size++;
+			System.out.println("Add first Node!! : " + newNode.data);
+		} else {
 			head.front = newNode;
 			newNode.back = head;
 			head = newNode;
 			size++;
-			System.out.println("¸Ç¾Õ¿¡ " + data + " µé¾î°¨");
+			System.out.println("Add Head Node : " + newNode.data);
+		}
+
+	}
+
+	void addRearNode(int data) {
+		Node newNode = new Node(data);
+		if (size == 0) {
+			head = newNode;
+			tail = newNode;
+			size++;
+			System.out.println("Add first Node!! : " + newNode.data);
 		} else {
-			firstNode(data);
+			tail.back = newNode;
+			newNode.front = tail;
+			tail = newNode;
+			size++;
+			System.out.println("Add Tail Node : " + newNode.data);
 		}
 	}
 
-	// Æ¯Á¤ À§Ä¡(index) Node Data ÀÐ±â
 	int readData(int index) {
-		int result = 0;
-		try {
-			Node node = head;
-			for (int i = 0; i < index - 1; i++) {
-				node = node.back;
+		int result = -1;
+		if (size > 0 && index < size) {
+			Node ptrNode = head;
+			for (int i = 0; i < index; i++) {
+				ptrNode = ptrNode.back;
 			}
-			result = node.data;
-		} catch (Exception e) {
-			System.out.println("readData(int index) Exception ¹ß»ý");
+			result = ptrNode.data;
+		} else {
+			System.out.println("dataê°€ ì—†ìŠµë‹ˆë‹¤.!!");
 		}
 		return result;
 	}
 
-	// ÀüÃ¼ ³ëµåÀÇ data Ãâ·Â ex) 10 20 30 40 50
 	void printData() {
 		if (size > 0) {
-			try {
-				Node node = head;
-				for (int i = 0; i < size; i++) {
-					System.out.print(node.data + " ");
-					node = node.back;
-				}
-			} catch (Exception e) {
-				System.out.println("printData() Exception ¹ß»ý");
+			Node ptrNode = head;
+			for (int i=0; i<size;i++) {
+				System.out.print(ptrNode.data + ", ");
+				ptrNode = ptrNode.back;
 			}
+			System.out.println();
 		} else {
-			System.out.println("Ãâ·Âµ¥ÀÌÅÍ°¡ ¾ø½À´Ï´Ù.");
+			System.out.println("dataê°€ ì—†ìŠµë‹ˆë‹¤.!!");
 		}
 	}
 
-	// Æ¯Á¤ À§Ä¡(index) Node »èÁ¦
 	boolean removeNode(int index) {
-		if ((index <= size && index > 0) && size > 0) {
-			if (index == 1) {// head¸¦ Áö¿ï¶§
+		if (size > 0 && index < size && index >= 0) {
+			if (index == 0) {//first
 				head = head.back;
 				head.front = null;
-			} else if (index == size) {// rear¸¦ Áö¿ï¶§
-				rear = rear.front;
-				rear.back = null;
-			} else {
-				Node node = head;
-				for (int i = 1; i < index; i++) {
-					node = node.back;
+				size--;
+			} else if(index == (size-1)) {//last
+				tail = tail.front;
+				tail.back = null;
+				size--;
+			} else {//middle
+				Node ptrNode = head;
+				for (int i=0;i<index;i++) {
+					ptrNode = ptrNode.back;
 				}
-				node.front.back = node.back;
-				node.back.front = node.front;
+				ptrNode.front.back = ptrNode.back;
+				ptrNode.back.front = ptrNode.front;
+				size--;
 			}
-			size--;
 			return true;
 		} else {
-			System.out.println("index ¹üÀ§X");
+			System.out.println("ì‚­ì œí•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.");
 			return false;
 		}
 	}
-
-	// ÀüÃ¼ Node »èÁ¦
-	boolean removeAllNode() {
+	
+	boolean removeAllData() {
 		head = null;
-		rear = null;
+		tail = null;
 		size = 0;
 		return true;
 	}
 
-	class Node {
-		Node(int data) {
-			this.data = data;
-		}
-
-		int data;
-		Node front = null;
-		Node back = null;
+	public static void main(String[] args) {
+		LinkedList list = new LinkedList();
+		list.addHeadNode(10);
+		list.addHeadNode(20);
+		list.addHeadNode(30);
+		list.printData();
+		
+		list.addRearNode(40);
+		list.printData();
+		
+		list.removeNode(1);
+		list.printData();
+		
+		list.removeAllData();
+		list.printData();
+		
+		
 	}
+
 }
+
