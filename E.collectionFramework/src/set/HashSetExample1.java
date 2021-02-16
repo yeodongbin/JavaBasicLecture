@@ -14,22 +14,22 @@ public class HashSetExample1 {
 		set.add("Java");
 		set.add("iBATIS");
 
-		int size = set.size(); // °¹¼ö
+		int size = set.size(); 
 		System.out.println("Size = " + size);
 
-		Iterator<String> iterator = set.iterator(); // ¹İº¹ÀÚ ¸®ÅÏ
+		Iterator<String> iterator = set.iterator(); 
 
-		while (iterator.hasNext()) {// °ªÀ» °¡Áö°í ÀÖÀ¸¸é...
+		while (iterator.hasNext()) {
 			String element = iterator.next();
 			System.out.println(element);
 		}
 
-		set.clear(); // ¿ÏÀü »èÁ¦
+		set.clear(); 
 		size = set.size();
 		System.out.println("Size = " + size);
 
 		if (set.isEmpty()) {
-			System.out.println("ºñ¾îÀÖÀ½");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 		}
 	}
 }

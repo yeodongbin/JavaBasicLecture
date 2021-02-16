@@ -7,11 +7,11 @@ public class VectorExample {
 	public static void main(String[] args) {
 		List<Board> list = new Vector<Board>();
 
-		list.add(new Board("Á¦¸ñ1", "³»¿ë1", "±Û¾´ÀÌ1"));
-		list.add(new Board("Á¦¸ñ2", "³»¿ë2", "±Û¾´ÀÌ2"));
-		list.add(new Board("Á¦¸ñ3", "³»¿ë3", "±Û¾´ÀÌ3"));
-		list.add(new Board("Á¦¸ñ4", "³»¿ë4", "±Û¾´ÀÌ4"));
-		list.add(new Board("Á¦¸ñ5", "³»¿ë5", "±Û¾´ÀÌ5"));
+		list.add(new Board("ï¿½ï¿½ï¿½ï¿½1", "ï¿½ï¿½ï¿½ï¿½1", "ï¿½Û¾ï¿½ï¿½ï¿½1"));
+		list.add(new Board("ï¿½ï¿½ï¿½ï¿½2", "ï¿½ï¿½ï¿½ï¿½2", "ï¿½Û¾ï¿½ï¿½ï¿½2"));
+		list.add(new Board("ï¿½ï¿½ï¿½ï¿½3", "ï¿½ï¿½ï¿½ï¿½3", "ï¿½Û¾ï¿½ï¿½ï¿½3"));
+		list.add(new Board("ï¿½ï¿½ï¿½ï¿½4", "ï¿½ï¿½ï¿½ï¿½4", "ï¿½Û¾ï¿½ï¿½ï¿½4"));
+		list.add(new Board("ï¿½ï¿½ï¿½ï¿½5", "ï¿½ï¿½ï¿½ï¿½5", "ï¿½Û¾ï¿½ï¿½ï¿½5"));
 
 		list.remove(2);
 		list.remove(3);
@@ -20,6 +20,18 @@ public class VectorExample {
 			Board board = list.get(i);
 			System.out.println(board.subject + "\t" + board.content + "\t" + board.writer);
 		}
+	}
+}
+
+
+class Board {
+	String subject;
+	String content;
+	String writer;
+	public Board(String subject, String content, String writer) {
+		this.subject = subject;
+		this.content = content;
+		this.writer = writer;
 	}
 }
 

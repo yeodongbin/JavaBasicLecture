@@ -1,4 +1,4 @@
-package genericWildCard;
+package generic_wildcard;
 
 class Person1 {}
 class Worker1 extends Person1 {}
@@ -9,7 +9,7 @@ class Course1<T extends Person1> {}
 
 public class WildCard {
 
-	public static void job(Course1<Integer> course) {}
+	//public static void job(Course1<Integer> course) {}
 	public static void job1(Course1<?> course) {}
 	public static void job2(Course1<? extends Student1> course) {}
 	public static void job3(Course1<? super Worker1> course) {}

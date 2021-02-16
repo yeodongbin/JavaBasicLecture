@@ -14,6 +14,11 @@ class CalcThread extends Thread {
 	}
 }
 
+//public static final int MAX_PRIORITY 10
+//public static final int MIN_PRIORITY 1
+//public static final int NORM_PRIORITY 5
+
+
 public class PriorityExample {
 
 	public static void main(String[] args) {

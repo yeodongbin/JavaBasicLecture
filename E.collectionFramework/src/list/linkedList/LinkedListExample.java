@@ -17,17 +17,17 @@ public class LinkedListExample {
 			list1.add(0, String.valueOf(i));
 		}
 		endTime = System.nanoTime();
-		System.out.println("ArrayList °É¸°½Ã°£: " + (endTime - startTime) + " ns");
+		System.out.println("ArrayList ï¿½É¸ï¿½ï¿½Ã°ï¿½: " + (endTime - startTime) + " ns");
 
 		startTime = System.nanoTime();
 		for (int i = 0; i < 10000; i++) {
 			list2.add(0, String.valueOf(i));
 		}
 		endTime = System.nanoTime();
-		System.out.println("LinkedList °É¸°½Ã°£: " + (endTime - startTime) + " ns");
+		System.out.println("LinkedList ï¿½É¸ï¿½ï¿½Ã°ï¿½: " + (endTime - startTime) + " ns");
 	}
 }
 
-//             ¼øÂ÷ÀûÀ¸·Î Ãß°¡/»èÁ¦  Áß°£¿¡Ãß°¡/»èÁ¦  °Ë»ö
-//ArrayList          ¤·                                ¤·
-//LinkedList                         ¤·
+//           
+//ArrayList       
+//LinkedList             

@@ -11,7 +11,7 @@ public class StatePrintThread extends Thread {
 		while (true) {
 			Thread.State state = targetThread.getState();
 
-			System.out.println("Å¸°Ù ½º·¹µå »óÅÂ: " + state);
+			System.out.println("Target Thread State: " + state);
 
 			if (state == Thread.State.NEW) {
 				targetThread.start();
@@ -22,7 +22,7 @@ public class StatePrintThread extends Thread {
 			}
 
 			try {
-				// 0.5ÃÊ°£ ÀÏ½Ã Á¤Áö
+				// 0.5ï¿½Ê°ï¿½ ï¿½Ï½ï¿½ ï¿½ï¿½ï¿½ï¿½
 				Thread.sleep(500);
 			} catch (Exception e) {
 			}

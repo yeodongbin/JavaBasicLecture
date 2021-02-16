@@ -1,4 +1,4 @@
-package genericWildCard;
+package generic_wildcard;
 
 public class Course<T> {
 	private String name;
@@ -12,7 +12,7 @@ public class Course<T> {
 	public String getName() {
 		return name;
 	}
-	
+
 //	public String[] getStudents() {
 //		String[] student = new String[students.length];
 //		
@@ -23,7 +23,7 @@ public class Course<T> {
 //		return student;
 //	}
 
-	public T[] getStudents() {		
+	public T[] getStudents() {
 		return students;
 	}
 
@@ -43,7 +43,7 @@ class Person {
 	Person(String type) {
 		this.type = type;
 	}
-	
+
 	@Override
 	public String toString() {
 		return type;
@@ -54,7 +54,7 @@ class Worker extends Person {
 	Worker(String type) {
 		super(type);
 	}
-	
+
 	@Override
 	public String toString() {
 		return type;
@@ -65,7 +65,7 @@ class Student extends Person {
 	Student(String type) {
 		super(type);
 	}
-	
+
 	@Override
 	public String toString() {
 		return type;
@@ -76,7 +76,7 @@ class HighStudent extends Student {
 	HighStudent(String type) {
 		super(type);
 	}
-	
+
 	@Override
 	public String toString() {
 		return type;

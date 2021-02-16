@@ -9,9 +9,9 @@ public class SleepExample {
 
 		for(int i=0; i<10; i++) {
 		//	toolkit.beep();
-			System.out.println("¶¯");
+			System.out.println("ï¿½ï¿½");
 			try {
-				Thread.sleep(3000); //3ÃÊ
+				Thread.sleep(3000); 
 			} catch(InterruptedException e) {
 			}
 		}

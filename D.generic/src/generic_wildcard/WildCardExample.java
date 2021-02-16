@@ -1,40 +1,37 @@
-package genericWildCard;
+package generic_wildcard;
 
 import java.util.Arrays;
 
 public class WildCardExample {
 
 	public static void registerCourse(Course<?> course) {
-		System.out.println(course.getName() + " ¼ö°­»ý: " 
-							+ Arrays.toString(course.getStudents()));
-	}
+		System.out.println(course.getName() + " ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½: " 
+							+ Arrays.toString(course.getStudents()));}
 
 	public static void registerCourseStudent(Course<? extends Student> course) {
-		System.out.println(course.getName() + " ¼ö°­»ý: " 
-							+ Arrays.toString(course.getStudents()));
-	}
+		System.out.println(course.getName() + " ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½: " 
+							+ Arrays.toString(course.getStudents()));}
 
 	public static void registerCourseWorker(Course<? super Worker> course) {
-		System.out.println(course.getName() + " ¼ö°­»ý:" 
-							+ Arrays.toString(course.getStudents()));
-	}
+		System.out.println(course.getName() + " ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½:" 
+							+ Arrays.toString(course.getStudents()));}
 
 	public static void main(String[] args) {
-		Course<Person> personCourse = new Course<Person>("ÀÏ¹ÝÀÎ°úÁ¤", 5);
-		personCourse.add(new Person("ÀÏ¹ÝÀÎ"));
-		personCourse.add(new Worker("Á÷ÀåÀÎ"));
-		personCourse.add(new Student("ÇÐ»ý"));
-		personCourse.add(new HighStudent("°íµîÇÐ»ý"));
+		Course<Person> personCourse = new Course<Person>("ï¿½Ï¹ï¿½ï¿½Î°ï¿½ï¿½ï¿½", 5);
+		personCourse.add(new Person("ï¿½Ï¹ï¿½ï¿½ï¿½"));
+		personCourse.add(new Worker("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"));
+		personCourse.add(new Student("ï¿½Ð»ï¿½"));
+		personCourse.add(new HighStudent("ï¿½ï¿½ï¿½ï¿½Ð»ï¿½"));
 
-		Course<Worker> workerCourse = new Course<Worker>("Á÷ÀåÀÎ°úÁ¤", 5);
-		workerCourse.add(new Worker("Á÷ÀåÀÎ"));
+		Course<Worker> workerCourse = new Course<Worker>("ï¿½ï¿½ï¿½ï¿½ï¿½Î°ï¿½ï¿½ï¿½", 5);
+		workerCourse.add(new Worker("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"));
 
-		Course<Student> studentCourse = new Course<Student>("ÇÐ»ý°úÁ¤", 5);
-		studentCourse.add(new Student("ÇÐ»ý"));
-		studentCourse.add(new HighStudent("°íµîÇÐ»ý"));
+		Course<Student> studentCourse = new Course<Student>("ï¿½Ð»ï¿½ï¿½ï¿½ï¿½ï¿½", 5);
+		studentCourse.add(new Student("ï¿½Ð»ï¿½"));
+		studentCourse.add(new HighStudent("ï¿½ï¿½ï¿½ï¿½Ð»ï¿½"));
 
-		Course<HighStudent> highstudentCourse = new Course<HighStudent>("°íµîÇÐ»ý°úÁ¤", 5);
-		highstudentCourse.add(new HighStudent("°íµîÇÐ»ý"));
+		Course<HighStudent> highstudentCourse = new Course<HighStudent>("ï¿½ï¿½ï¿½ï¿½Ð»ï¿½ï¿½ï¿½ï¿½ï¿½", 5);
+		highstudentCourse.add(new HighStudent("ï¿½ï¿½ï¿½ï¿½Ð»ï¿½"));
 
 		registerCourse(personCourse);
 		registerCourse(workerCourse);
@@ -52,7 +49,5 @@ public class WildCardExample {
 		registerCourseWorker(workerCourse);
 		// registerCourseWorker(studentCourse); (x)
 		// registerCourseWorker(highStudentCourse); (x)
-
 	}
-
 }

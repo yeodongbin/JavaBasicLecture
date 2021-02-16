@@ -7,21 +7,21 @@ import java.util.Set;
 
 public class HashMapExample1 {
 	public static void main(String[] args) {
-		// Map ÄÃ·º¼Ç »ý¼º
+		// Map ï¿½Ã·ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		Map<String, Integer> map = new HashMap<String, Integer>();
 
-		// °´Ã¼ ÀúÀå
-		map.put("½Å¿ë±Ç", 85);
-		map.put("È«±æµ¿", 90);
-		map.put("µ¿Àå±º", 80);
-		map.put("È«±æµ¿", 95);
-		System.out.println("ÃÑ Entry ¼ö: " + map.size());
+		// ï¿½ï¿½Ã¼ ï¿½ï¿½ï¿½ï¿½
+		map.put("MINHO", 85);
+		map.put("JIHEA", 90);
+		map.put("YOUNGHE", 75);
+		map.put("DONGBIN", 65);
+		System.out.println("ï¿½ï¿½ Entry ï¿½ï¿½: " + map.size());
 
-		// °´Ã¼ Ã£±â
-		System.out.println("\tÈ«±æµ¿ : " + map.get("È«±æµ¿"));
+		// ï¿½ï¿½Ã¼ Ã£ï¿½ï¿½
+		System.out.println("\tÈ«ï¿½æµ¿ : " + map.get("DONGBIN"));
 		System.out.println();
 
-		// °´Ã¼¸¦ ÇÏ³ª¾¿ Ã³¸®
+		// ï¿½ï¿½Ã¼ï¿½ï¿½ ï¿½Ï³ï¿½ï¿½ï¿½ Ã³ï¿½ï¿½
 		Set<String> keySet = map.keySet();
 		Iterator<String> keyIterator = keySet.iterator();
 		while (keyIterator.hasNext()) {
@@ -31,11 +31,11 @@ public class HashMapExample1 {
 		}
 		System.out.println();
 
-		// °´Ã¼ »èÁ¦
-		map.remove("È«±æµ¿");
-		System.out.println("ÃÑ Entry ¼ö: " + map.size());
+		// 
+		map.remove("DONGBIN");
+		System.out.println("ï¿½ï¿½ Entry ï¿½ï¿½: " + map.size());
 
-		// °´Ã¼¸¦ ÇÏ³ª¾¿ Ã³¸®
+		// 
 		Set<Map.Entry<String, Integer>> entrySet = map.entrySet();
 		Iterator<Map.Entry<String, Integer>> entryIterator = entrySet.iterator();
 		while (entryIterator.hasNext()) {
@@ -46,8 +46,8 @@ public class HashMapExample1 {
 		}
 		System.out.println();
 
-		// °´Ã¼ ÀüÃ¼ »èÁ¦
+		// 
 		map.clear();
-		System.out.println("ÃÑ Entry ¼ö: " + map.size());
+		System.out.println("ï¿½ï¿½ Entry ï¿½ï¿½: " + map.size());
 	}
 }
